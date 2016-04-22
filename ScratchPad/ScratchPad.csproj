@@ -58,8 +58,10 @@
     <Compile Include="LRU\LRUCache2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="String\UniqueCharacters.cs" />
     <Compile Include="Tests\LinkedListTests\RemoveDupsTest.cs" />
     <Compile Include="Tests\LinkedListTests\ReverseSLLTest.cs" />
+    <Compile Include="Tests\StringTests\UniqueCharactersTest.cs" />
     <Compile Include="Tests\TrieTests\TrieTest.cs" />
     <Compile Include="Trie\ITrie.cs" />
     <Compile Include="Trie\Trie.cs" />
