@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ScratchPad.JSON.NET;
 using ScratchPad.Tests;
 using ScratchPad.Tests.LinkedListTests;
+using ScratchPad.Tests.TrieTests;
 
 namespace ScratchPad
 {
@@ -16,6 +17,7 @@ namespace ScratchPad
         {
             //ReverseSLLTest.Run();
             //RemoveDupsTest.Run();
+            TrieTest.Run();
         }
     }
 }
