@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ScratchPadTests;
 
-namespace ScratchPadTests
+namespace ScratchPad
 {
     class Program
     {
@@ -14,7 +9,7 @@ namespace ScratchPadTests
             //ReverseSLLTest.Run();
             //RemoveDupsTest.Run();
             //TrieTest.Run();
-            //UniqueCharactersTest.Run();
+            UniqueCharactersTest.Run();
             //ReverseSubListTests.Run();
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System;
+using ScratchPad;
 
-namespace ScratchPad.Tests.LinkedListTests
+namespace ScratchPadTests
 {
     public class ReverseSLLTest
     {

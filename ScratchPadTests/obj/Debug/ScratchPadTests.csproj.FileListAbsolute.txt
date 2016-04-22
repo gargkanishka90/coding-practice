@@ -1,0 +1,10 @@
+C:\coding-practice\ScratchPadTests\bin\Debug\ScratchPadTests.exe.config
+C:\coding-practice\ScratchPadTests\bin\Debug\ScratchPadTests.exe
+C:\coding-practice\ScratchPadTests\bin\Debug\ScratchPadTests.pdb
+C:\coding-practice\ScratchPadTests\bin\Debug\ScratchPad.exe
+C:\coding-practice\ScratchPadTests\bin\Debug\Newtonsoft.Json.dll
+C:\coding-practice\ScratchPadTests\bin\Debug\ScratchPad.pdb
+C:\coding-practice\ScratchPadTests\bin\Debug\Newtonsoft.Json.xml
+C:\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.csprojResolveAssemblyReference.cache
+C:\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.exe
+C:\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.pdb

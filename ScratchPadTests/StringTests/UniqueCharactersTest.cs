@@ -1,7 +1,7 @@
 ﻿using System;
 using ScratchPad.String;
 
-namespace ScratchPad.Tests.StringTests
+namespace ScratchPadTests
 {
     public class UniqueCharactersTest
     {

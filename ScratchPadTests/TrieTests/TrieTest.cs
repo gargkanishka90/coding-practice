@@ -1,6 +1,7 @@
 ﻿using System;
+using ScratchPad;
 
-namespace ScratchPad.Tests.TrieTests
+namespace ScratchPadTests
 {
     public class TrieTest
     {
