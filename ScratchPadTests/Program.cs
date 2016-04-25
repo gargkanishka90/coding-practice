@@ -1,4 +1,6 @@
-﻿using ScratchPadTests;
+﻿using System.Collections.Generic;
+using ScratchPad.Arrays;
+using ScratchPadTests;
 
 namespace ScratchPad
 {
@@ -9,8 +11,10 @@ namespace ScratchPad
             //ReverseSLLTest.Run();
             //RemoveDupsTest.Run();
             //TrieTest.Run();
-            UniqueCharactersTest.Run();
-            //ReverseSubListTests.Run();
+            //UniqueCharactersTest.Run();
+           // ReverseSubListTests.Run();
+              //GenerateAllPermutationsTest.Run();
+              ArrayPairSumTests.Run();
         }
     }
 }

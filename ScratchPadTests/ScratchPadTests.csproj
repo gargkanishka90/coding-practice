@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\ArrayPairSumTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LinkedListTests\RemoveDupsTest.cs" />
     <Compile Include="LinkedListTests\ReverseSLLTest.cs" />
     <Compile Include="LinkedListTests\ReverseSubListTests.cs" />
+    <Compile Include="StringTests\GenerateAllPermutationsTest.cs" />
     <Compile Include="StringTests\UniqueCharactersTest.cs" />
     <Compile Include="TrieTests\TrieTest.cs" />
   </ItemGroup>

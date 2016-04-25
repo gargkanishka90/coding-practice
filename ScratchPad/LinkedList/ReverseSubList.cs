@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.CodeDom.Compiler;
+using System.ComponentModel;
 
 namespace ScratchPad
 {
@@ -7,7 +8,7 @@ namespace ScratchPad
         public static LinkNode Reverse(LinkNode root, int start, int finish)
         {
             var current = root;
-            var ret = root;
+            var dummy = root;
             LinkNode prev = null;
             var i = 1;
 
@@ -17,20 +18,19 @@ namespace ScratchPad
                 current = current.Next;
             }
 
-            var startCheckPoint = prev;
-            var endCheckPoint = current;
+            //var startCheckPoint = prev;
+            var startCheckPoint = current;
 
             while (start++ < finish)
             {
                 var tmp = current.Next;
-                current.Next.SetNext(current);
+                current.SetNext(null);
+                tmp.Next = current;
                 current = tmp;
-                //prev.SetNext(current);
-                //urrent = tmp;
             }
-            endCheckPoint.SetNext(current.Next);
-            current.SetNext(startCheckPoint);
-            return ret;
+            prev.Next = current;
+            startCheckPoint.Next = current.Next;
+            return dummy;
         } 
     }
 }
