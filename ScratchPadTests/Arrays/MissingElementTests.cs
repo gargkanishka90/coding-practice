@@ -6,9 +6,9 @@ namespace ScratchPad.Arrays
     {
         public static void Run()
         {
-            var arr1 = new int[] {1};
-            var arr2 = new int[] {};
-            Console.WriteLine(MissingElement.Find(arr1, arr2));
+            var arr1 = new int[] {1,2,3,4};
+            var arr2 = new int[] {1,2,3};
+            Console.WriteLine(MissingElement.Find2(arr1, arr2));
         } 
     }
 }
