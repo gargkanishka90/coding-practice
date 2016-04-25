@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Arrays\ArrayPairSum.cs" />
     <Compile Include="Arrays\MaxContiguousSubArray.cs" />
+    <Compile Include="Arrays\MissingElement.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
     <Compile Include="LinkedList\LinkedListUtillities.cs" />

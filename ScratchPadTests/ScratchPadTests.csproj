@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Arrays\ArrayPairSumTests.cs" />
     <Compile Include="Arrays\MaxContiguousSubArrayTests.cs" />
+    <Compile Include="Arrays\MissingElementTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LinkedListTests\RemoveDupsTest.cs" />
