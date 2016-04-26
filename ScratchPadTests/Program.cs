@@ -16,7 +16,9 @@ namespace ScratchPad
               //GenerateAllPermutationsTest.Run();
               //ArrayPairSumTests.Run();
               //MaxContiguousSubArrayTests.Run();
-              MissingElementTests.Run();
+             // MissingElementTests.Run();
+             //ReplaceCharsTest.Run();
+             InsertCharsTest.Run();
         }
     }
 }

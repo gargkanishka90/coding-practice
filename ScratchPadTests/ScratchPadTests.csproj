@@ -52,6 +52,8 @@
     <Compile Include="LinkedListTests\ReverseSLLTest.cs" />
     <Compile Include="LinkedListTests\ReverseSubListTests.cs" />
     <Compile Include="StringTests\GenerateAllPermutationsTest.cs" />
+    <Compile Include="StringTests\InsertCharsTest.cs" />
+    <Compile Include="StringTests\ReplaceCharsTest.cs" />
     <Compile Include="StringTests\UniqueCharactersTest.cs" />
     <Compile Include="TrieTests\TrieTest.cs" />
   </ItemGroup>
@@ -63,6 +65,9 @@
       <Project>{3151e631-39c6-4dc1-8f4f-4edbe50f1c4f}</Project>
       <Name>ScratchPad</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Graphs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
