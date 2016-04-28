@@ -52,11 +52,13 @@
     <Compile Include="Arrays\MissingElement.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
+    <Compile Include="LinkedList\LinkedListCycle.cs" />
     <Compile Include="LinkedList\LinkedListUtillities.cs" />
     <Compile Include="LinkedList\LinkNode.cs" />
     <Compile Include="LinkedList\RemoveDups.cs" />
     <Compile Include="LinkedList\ReverseSLL.cs" />
     <Compile Include="LinkedList\ReverseSubList.cs" />
+    <Compile Include="LinkedList\SplitLinkedList.cs" />
     <Compile Include="LINQtoJSON\PracticeLINQtoJSON.cs" />
     <Compile Include="LRU\LRUCache.cs" />
     <Compile Include="LRU\LRUCache2.cs" />

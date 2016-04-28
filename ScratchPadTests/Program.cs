@@ -18,7 +18,9 @@ namespace ScratchPad
               //MaxContiguousSubArrayTests.Run();
              // MissingElementTests.Run();
              //ReplaceCharsTest.Run();
-             InsertCharsTest.Run();
+             //InsertCharsTest.Run();
+             //SplitLinkedListTests.Run();
+             LinkedListCycleTests.Run();
         }
     }
 }
