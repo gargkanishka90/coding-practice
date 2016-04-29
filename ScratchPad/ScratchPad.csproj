@@ -52,6 +52,7 @@
     <Compile Include="Arrays\MissingElement.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
+    <Compile Include="LinkedList\DeleteMnodesAfterEveryNnodes.cs" />
     <Compile Include="LinkedList\LinkedListCycle.cs" />
     <Compile Include="LinkedList\LinkedListUtillities.cs" />
     <Compile Include="LinkedList\LinkNode.cs" />

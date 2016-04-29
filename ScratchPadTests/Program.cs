@@ -12,15 +12,16 @@ namespace ScratchPad
             //RemoveDupsTest.Run();
             //TrieTest.Run();
             //UniqueCharactersTest.Run();
-           // ReverseSubListTests.Run();
-              //GenerateAllPermutationsTest.Run();
-              //ArrayPairSumTests.Run();
-              //MaxContiguousSubArrayTests.Run();
-             // MissingElementTests.Run();
-             //ReplaceCharsTest.Run();
-             //InsertCharsTest.Run();
-             //SplitLinkedListTests.Run();
-             LinkedListCycleTests.Run();
+            // ReverseSubListTests.Run();
+            //GenerateAllPermutationsTest.Run();
+            //ArrayPairSumTests.Run();
+            //MaxContiguousSubArrayTests.Run();
+            // MissingElementTests.Run();
+            //ReplaceCharsTest.Run();
+            //InsertCharsTest.Run();
+            //SplitLinkedListTests.Run();
+            //LinkedListCycleTests.Run();
+            DeleteMafterEveryNTest.Run();
         }
     }
 }
