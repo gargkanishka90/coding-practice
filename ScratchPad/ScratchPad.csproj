@@ -51,6 +51,9 @@
     <Compile Include="Arrays\MatrixZero.cs" />
     <Compile Include="Arrays\MaxContiguousSubArray.cs" />
     <Compile Include="Arrays\MissingElement.cs" />
+    <Compile Include="BinaryTree\PreOrder.cs" />
+    <Compile Include="BinaryTree\TreeHelpers.cs" />
+    <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
     <Compile Include="LinkedList\DeleteMnodesAfterEveryNnodes.cs" />

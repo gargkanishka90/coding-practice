@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ScratchPad.Arrays;
+using ScratchPad.BinaryTreeTests;
 using ScratchPadTests;
 
 namespace ScratchPad
@@ -23,7 +24,8 @@ namespace ScratchPad
             //LinkedListCycleTests.Run();
            // DeleteMafterEveryNTest.Run();
            //FindFirstUniqueCharacterTest.Run();
-           MatrixZeroTests.Run();
+           //MatrixZeroTests.Run();
+           PreOrderTest.Run();
         }
     }
 }
