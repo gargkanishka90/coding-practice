@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\ArrayPairSumTests.cs" />
+    <Compile Include="Arrays\MatrixZeroTests.cs" />
     <Compile Include="Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Arrays\MissingElementTests.cs" />
     <Compile Include="LinkedListTests\DeleteMafterEveryNTest.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="LinkedListTests\RemoveDupsTest.cs" />
     <Compile Include="LinkedListTests\ReverseSLLTest.cs" />
     <Compile Include="LinkedListTests\ReverseSubListTests.cs" />
+    <Compile Include="StringTests\FindFirstUniqueCharacterTest.cs" />
     <Compile Include="StringTests\GenerateAllPermutationsTest.cs" />
     <Compile Include="StringTests\InsertCharsTest.cs" />
     <Compile Include="StringTests\ReplaceCharsTest.cs" />

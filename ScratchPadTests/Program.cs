@@ -21,7 +21,9 @@ namespace ScratchPad
             //InsertCharsTest.Run();
             //SplitLinkedListTests.Run();
             //LinkedListCycleTests.Run();
-            DeleteMafterEveryNTest.Run();
+           // DeleteMafterEveryNTest.Run();
+           //FindFirstUniqueCharacterTest.Run();
+           MatrixZeroTests.Run();
         }
     }
 }

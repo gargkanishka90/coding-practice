@@ -7,22 +7,24 @@ namespace ScratchPad.String
 {
     public class GenerateAllPermutations
     {
-        public static List<string> permutations(string thisString)
+        public static List<string> GetPermutations(string thisString)
         {
-            List<string> myResult = new List<string>();
-            if (thisString.Length <= 1)
+            var myResult = new List<string>();
+            if (thisString.Length == 0)
             {
-                myResult.Add(thisString);
+                myResult.Add("");
+                return myResult;
             }
-            else
-            {
-                for (int i = 0; i < thisString.Length; i++)
+
+                var first = thisString[0];
+                var subresults = GetPermutations(thisString.Substring(1));
+                foreach (var subresult in subresults)
                 {
-                    myResult.AddRange(
-                          permutations(thisString.Substring(0, i) + thisString.Substring(i + 1))
-                                    .Select(x => thisString.Substring(i, 1) + x));
+                    for (var j = 0; j <= subresult.Length; ++j)
+                    {
+                        myResult.Add(subresult.Substring(0,j) + first + subresult.Substring(j));
+                    }
                 }
-            }
             return myResult;
         }
     }

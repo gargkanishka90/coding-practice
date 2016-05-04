@@ -14,3 +14,11 @@ C:\coding-practice\ScratchPad\bin\Debug\ScratchPad.pdb
 C:\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.dll
 C:\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.xml
 C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
+C:\coding-practice\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe.config
+C:\coding-practice\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe
+C:\coding-practice\coding-practice\ScratchPad\bin\Debug\ScratchPad.pdb
+C:\coding-practice\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.dll
+C:\coding-practice\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.xml
+C:\coding-practice\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
+C:\coding-practice\coding-practice\ScratchPad\obj\Debug\ScratchPad.exe
+C:\coding-practice\coding-practice\ScratchPad\obj\Debug\ScratchPad.pdb
