@@ -51,6 +51,7 @@
     <Compile Include="LinkedListTests\DeleteMafterEveryNTest.cs" />
     <Compile Include="LinkedListTests\LinkedListCycleTests.cs" />
     <Compile Include="LinkedListTests\SplitLinkedListTests.cs" />
+    <Compile Include="LRUCache\LRUCacheTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LinkedListTests\RemoveDupsTest.cs" />
