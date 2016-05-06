@@ -2,6 +2,7 @@
 using ScratchPad.Arrays;
 using ScratchPad.BinaryTreeTests;
 using ScratchPad.LRUCache;
+using ScratchPad.Searching;
 using ScratchPadTests;
 
 namespace ScratchPad
@@ -27,7 +28,8 @@ namespace ScratchPad
            //FindFirstUniqueCharacterTest.Run();
            //MatrixZeroTests.Run();
            //PreOrderTest.Run();
-           LRUCacheTests.Run();
+           //LRUCacheTests.Run();
+           InvertedIndexTests.Run();
         }
     }
 }

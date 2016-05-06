@@ -70,6 +70,7 @@
     <Compile Include="LRU\LRUCache3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Searching\InvertedIndex.cs" />
     <Compile Include="String\FindFirstUniqueCharacter.cs" />
     <Compile Include="String\GenerateAllPermutations.cs" />
     <Compile Include="String\InsertChars.cs" />
