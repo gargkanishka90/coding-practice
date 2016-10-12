@@ -56,6 +56,7 @@
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
+    <Compile Include="Leetcode\TwoSum.cs" />
     <Compile Include="LinkedList\DeleteMnodesAfterEveryNnodes.cs" />
     <Compile Include="LinkedList\LinkedListCycle.cs" />
     <Compile Include="LinkedList\LinkedListUtillities.cs" />

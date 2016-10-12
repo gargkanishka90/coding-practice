@@ -48,6 +48,7 @@
     <Compile Include="Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Arrays\MissingElementTests.cs" />
     <Compile Include="BinaryTreeTests\PreOrderTest.cs" />
+    <Compile Include="Leetcode\TwoSumTest.cs" />
     <Compile Include="LinkedListTests\DeleteMafterEveryNTest.cs" />
     <Compile Include="LinkedListTests\LinkedListCycleTests.cs" />
     <Compile Include="LinkedListTests\SplitLinkedListTests.cs" />

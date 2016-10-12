@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using ScratchPad.Arrays;
 using ScratchPad.BinaryTreeTests;
+using ScratchPad.Leetcode;
 using ScratchPad.LRUCache;
 using ScratchPad.Searching;
 using ScratchPadTests;
@@ -29,7 +30,8 @@ namespace ScratchPad
            //MatrixZeroTests.Run();
            //PreOrderTest.Run();
            //LRUCacheTests.Run();
-           InvertedIndexTests.Run();
+           //InvertedIndexTests.Run();
+           TwoSumTest.Run();
         }
     }
 }
