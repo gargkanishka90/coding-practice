@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using ScratchPad.Arrays;
 using ScratchPad.BinaryTreeTests;
+using ScratchPad.Heap;
 using ScratchPad.Leetcode;
 using ScratchPad.LRUCache;
 using ScratchPad.Searching;
 using ScratchPadTests;
+using ScratchPadTests.Heap;
 
 namespace ScratchPad
 {
@@ -14,7 +16,7 @@ namespace ScratchPad
         {
             //ReverseSLLTest.Run();
             //RemoveDupsTest.Run();
-            TrieTest.Run();
+            //TrieTest.Run();
             //UniqueCharactersTest.Run();
             // ReverseSubListTests.Run();
             //GenerateAllPermutationsTest.Run();
@@ -33,6 +35,7 @@ namespace ScratchPad
            //InvertedIndexTests.Run();
            //TwoSumTest.Run();
            //AddTwoNumbersTest.Run();
+           MergeKSortedArraysTest.Run();
         }
     }
 }

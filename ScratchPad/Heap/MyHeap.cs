@@ -56,7 +56,11 @@ namespace ScratchPadTests.Heap
                     Swap(i, Parent(i));
                     i = Parent(i);
                 }
-            }
+                else
+                {
+                    break;
+                }
+            }    
         }
          
         public T ExtractMin()
@@ -83,7 +87,7 @@ namespace ScratchPadTests.Heap
 
         public void Insert(T newValue)
         {
-            _list[_list.Count] = newValue;
+            _list.Add(newValue);
             HeapifyUp(_list.Count - 1);
         }
 
