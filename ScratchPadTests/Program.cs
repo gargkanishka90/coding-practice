@@ -14,7 +14,7 @@ namespace ScratchPad
         {
             //ReverseSLLTest.Run();
             //RemoveDupsTest.Run();
-            //TrieTest.Run();
+            TrieTest.Run();
             //UniqueCharactersTest.Run();
             // ReverseSubListTests.Run();
             //GenerateAllPermutationsTest.Run();
@@ -31,7 +31,8 @@ namespace ScratchPad
            //PreOrderTest.Run();
            //LRUCacheTests.Run();
            //InvertedIndexTests.Run();
-           TwoSumTest.Run();
+           //TwoSumTest.Run();
+           //AddTwoNumbersTest.Run();
         }
     }
 }

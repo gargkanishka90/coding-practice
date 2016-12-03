@@ -8,7 +8,7 @@ namespace ScratchPad
         public LinkNode Next;
         public LinkNode Prev;
 
-        public LinkNode(int d, LinkNode n = null, LinkNode p = null)
+        public LinkNode(int d, LinkNode n, LinkNode p)
         {
             Data = d;
             SetNext(n);

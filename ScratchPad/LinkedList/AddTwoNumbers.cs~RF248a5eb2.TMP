@@ -1,0 +1,10 @@
+﻿namespace ScratchPad
+{
+    public class AddTwoNumbers
+    {
+        public static LinkNode Add(LinkNode head1, LinkNode head2)
+        {
+            
+        }
+    }
+}
