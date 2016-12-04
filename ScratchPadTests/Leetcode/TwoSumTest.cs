@@ -12,8 +12,6 @@ namespace ScratchPad.Leetcode
             {
                 Console.WriteLine("At Position " + (item+1));
             }
-            
-            
         }
     }
 }
