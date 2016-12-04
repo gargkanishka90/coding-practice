@@ -5,6 +5,7 @@ using ScratchPad.Heap;
 using ScratchPad.Leetcode;
 using ScratchPad.LRUCache;
 using ScratchPad.Searching;
+using ScratchPad.Sorting;
 using ScratchPadTests;
 using ScratchPadTests.Heap;
 
@@ -35,7 +36,8 @@ namespace ScratchPad
            //InvertedIndexTests.Run();
            //TwoSumTest.Run();
            //AddTwoNumbersTest.Run();
-           MergeKSortedArraysTest.Run();
+           //MergeKSortedArraysTest.Run();
+           BubbleSortTest.Run();
         }
     }
 }
