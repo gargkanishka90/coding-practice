@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 
 namespace ScratchPadTests.Leetcode
-{
+{   /*
+        Question 1:  Given an array of integers, return indices of the two 
+        numbers such that they add up to a specific target.
+    */
     public static class TwoSum
     {
         public static int[] GetIndices(int[] arr, int sum)
