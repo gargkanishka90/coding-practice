@@ -55,10 +55,12 @@
     <Compile Include="BinaryTree\TreeHelpers.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
+    <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
     <Compile Include="Heap\MyHeap.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
+    <Compile Include="Leetcode\SortColors.cs" />
     <Compile Include="Leetcode\TwoSum.cs" />
     <Compile Include="LinkedList\AddTwoNumbers.cs" />
     <Compile Include="LinkedList\DeleteMnodesAfterEveryNnodes.cs" />
