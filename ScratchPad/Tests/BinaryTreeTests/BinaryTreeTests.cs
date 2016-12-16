@@ -26,5 +26,12 @@ namespace ScratchPad
             var root = TreeHelpers.CreateRandomTree();
             TreeTraveral.InOrderTraverse(root);
         }
+
+        [Test]
+        public static void LevelOrderTest()
+        {
+            var root = TreeHelpers.CreateRandomTree();
+            TreeTraveral.LeverOrderTraversal(root);
+        }
     }
 }

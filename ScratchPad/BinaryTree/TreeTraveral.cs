@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ScratchPadTests.BinaryTree
 {
@@ -31,6 +34,33 @@ namespace ScratchPadTests.BinaryTree
                 InOrderTraverse(root.left);
                 Console.WriteLine(root.data);
                 InOrderTraverse(root.right);
+            }
+        }
+
+        public static void LeverOrderTraversal(TreeNode root)
+        {
+            if (root == null) return;
+
+            var queue = new LinkedList<TreeNode>();
+
+            queue.AddFirst(root);
+
+            while (queue.Count != 0)
+            {
+                var temp = queue.Last();
+                queue.RemoveLast();
+
+                Console.WriteLine(temp.data);
+
+                if (temp.left != null)
+                {
+                    queue.AddFirst(temp.left);
+                }
+
+                if (temp.right != null)
+                {
+                    queue.AddFirst(temp.right);
+                }
             }
         }
     }
