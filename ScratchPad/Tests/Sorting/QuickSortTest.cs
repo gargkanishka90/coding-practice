@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using ScratchPadTests.Sorting;
 
-namespace ScratchPad.Sorting
+namespace ScratchPad
 {
     public class QuickSortTest
     {

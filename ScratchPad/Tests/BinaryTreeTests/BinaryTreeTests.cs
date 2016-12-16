@@ -1,8 +1,9 @@
 ﻿using NUnit.Framework;
 using ScratchPadTests.BinaryTree;
 
-namespace ScratchPad.BinaryTreeTests
+namespace ScratchPad
 {
+    [TestFixture]
     public class BinaryTreeTests
     {
         [Test]

@@ -37,6 +37,10 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -85,6 +89,31 @@
     <Compile Include="String\InsertChars.cs" />
     <Compile Include="String\ReplaceChars.cs" />
     <Compile Include="String\UniqueCharacters.cs" />
+    <Compile Include="Tests\Arrays\ArrayPairSumTests.cs" />
+    <Compile Include="Tests\Arrays\MatrixZeroTests.cs" />
+    <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
+    <Compile Include="Tests\Arrays\MissingElementTests.cs" />
+    <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
+    <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
+    <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
+    <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
+    <Compile Include="Tests\LinkedListTests\AddTwoNumbersTest.cs" />
+    <Compile Include="Tests\LinkedListTests\DeleteMafterEveryNTest.cs" />
+    <Compile Include="Tests\LinkedListTests\LinkedListCycleTests.cs" />
+    <Compile Include="Tests\LinkedListTests\RemoveDupsTest.cs" />
+    <Compile Include="Tests\LinkedListTests\ReverseSLLTest.cs" />
+    <Compile Include="Tests\LinkedListTests\ReverseSubListTests.cs" />
+    <Compile Include="Tests\LinkedListTests\SplitLinkedListTests.cs" />
+    <Compile Include="Tests\LRUCache\LRUCacheTests.cs" />
+    <Compile Include="Tests\Searching\InvertedIndexTests.cs" />
+    <Compile Include="Tests\Sorting\BubbleSortTest.cs" />
+    <Compile Include="Tests\Sorting\QuickSortTest.cs" />
+    <Compile Include="Tests\StringTests\FindFirstUniqueCharacterTest.cs" />
+    <Compile Include="Tests\StringTests\GenerateAllPermutationsTest.cs" />
+    <Compile Include="Tests\StringTests\InsertCharsTest.cs" />
+    <Compile Include="Tests\StringTests\ReplaceCharsTest.cs" />
+    <Compile Include="Tests\StringTests\UniqueCharactersTest.cs" />
+    <Compile Include="Tests\TrieTests\TrieTest.cs" />
     <Compile Include="Trie\ITrie.cs" />
     <Compile Include="Trie\Trie.cs" />
     <Compile Include="Trie\TrieNode.cs" />
@@ -92,6 +121,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tests\Graphs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
