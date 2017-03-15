@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonProblem.cs" />
     <Compile Include="Arrays\ArrayPairSum.cs" />
     <Compile Include="Arrays\MatrixZero.cs" />
     <Compile Include="Arrays\MaxContiguousSubArray.cs" />
@@ -60,6 +61,8 @@
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
+    <Compile Include="Hashing\GroupAnagrams.cs" />
+    <Compile Include="Hashing\PalindromicString.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
     <Compile Include="Heap\MyHeap.cs" />
