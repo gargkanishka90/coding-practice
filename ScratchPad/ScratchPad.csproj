@@ -63,6 +63,7 @@
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Hashing\GroupAnagrams.cs" />
     <Compile Include="Hashing\PalindromicString.cs" />
+    <Compile Include="Hashing\ValidAnagram.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
     <Compile Include="Heap\MyHeap.cs" />
@@ -98,6 +99,8 @@
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
+    <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
+    <Compile Include="Tests\Hashing\ValidAnagramTest.cs" />
     <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
     <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
     <Compile Include="Tests\LinkedListTests\AddTwoNumbersTest.cs" />

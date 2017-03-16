@@ -33,3 +33,4 @@ C:\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.xml
 C:\coding-practice\ScratchPad\bin\Debug\nunit.framework.xml
 C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.exe
 C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.pdb
+C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
