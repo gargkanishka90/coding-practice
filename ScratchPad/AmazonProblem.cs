@@ -10,27 +10,27 @@ namespace InterviewPractice
     {
         public static List<int> FindVendorWithMostDuplicates(List<Tuple<int, char>> data)
         {
-            var VendorToItemMap = new Dictionary<int, List<char>>();
-            var ItemToVendorMap = new Dictionary<char, int>();
+            var vendorToItemMap = new Dictionary<int, List<char>>();
+            var itemToVendorMap = new Dictionary<char, int>();
             foreach(var x in data)
             {
                 // add data to VendorToItemMap
-                if (!VendorToItemMap.Keys.Contains(x.Item1))
+                if (!vendorToItemMap.Keys.Contains(x.Item1))
                 {
-                    VendorToItemMap[x.Item1] = new List<char> { x.Item2 };
+                    vendorToItemMap[x.Item1] = new List<char> { x.Item2 };
                 } else
                 {
-                    VendorToItemMap[x.Item1].Add(x.Item2);
+                    vendorToItemMap[x.Item1].Add(x.Item2);
                 }
 
                 // add data to ItemToVendorMap
-                if (!ItemToVendorMap.Keys.Contains(x.Item2))
+                if (!itemToVendorMap.Keys.Contains(x.Item2))
                 {
-                    ItemToVendorMap[x.Item2] = 0;
+                    itemToVendorMap[x.Item2] = 0;
                 }
                 else
                 {
-                    ItemToVendorMap[x.Item2] = 1;
+                    itemToVendorMap[x.Item2] = 1;
                 }
             }
 
@@ -38,14 +38,14 @@ namespace InterviewPractice
 
             var countMap = new Dictionary<int, int>();
 
-            foreach(var kv in VendorToItemMap)
+            foreach(var kv in vendorToItemMap)
             {
-                countMap[kv.Key] = SumItems(kv.Value, ItemToVendorMap);
+                countMap[kv.Key] = SumItems(kv.Value, itemToVendorMap);
             }
 
-            int maxVal = countMap.Values.Max();
+            var maxVal = countMap.Values.Max();
 
-            List<int> result = new List<int>();
+            var result = new List<int>();
 
             foreach(var kv in countMap)
             {
@@ -57,9 +57,9 @@ namespace InterviewPractice
             return result;
         }
 
-        private static int SumItems(List<char> value, Dictionary<char, int> data)
+        private static int SumItems(List<char> value, IReadOnlyDictionary<char, int> data)
         {
-            int sum = 0;
+            var sum = 0;
             foreach(var i in value)
             {
                 sum += data[i];

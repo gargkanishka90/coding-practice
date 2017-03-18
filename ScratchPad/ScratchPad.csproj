@@ -60,9 +60,13 @@
     <Compile Include="BinaryTree\TreeHelpers.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
+    <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
+    <Compile Include="Hashing\FrequencySort.cs" />
     <Compile Include="Hashing\GroupAnagrams.cs" />
+    <Compile Include="Hashing\KMostFrequently.cs" />
     <Compile Include="Hashing\PalindromicString.cs" />
+    <Compile Include="Hashing\SingleNumber.cs" />
     <Compile Include="Hashing\ValidAnagram.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
@@ -99,7 +103,10 @@
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
+    <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
     <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
+    <Compile Include="Tests\Hashing\KMostFrequentlyTest.cs" />
+    <Compile Include="Tests\Hashing\SingleNumberTest.cs" />
     <Compile Include="Tests\Hashing\ValidAnagramTest.cs" />
     <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
     <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
