@@ -60,6 +60,8 @@
     <Compile Include="BinaryTree\TreeHelpers.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
+    <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
+    <Compile Include="DynamicProgramming\RobotGrid.cs" />
     <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Hashing\FrequencySort.cs" />
@@ -102,6 +104,7 @@
     <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
+    <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
     <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
     <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
@@ -117,6 +120,7 @@
     <Compile Include="Tests\LinkedListTests\ReverseSLLTest.cs" />
     <Compile Include="Tests\LinkedListTests\ReverseSubListTests.cs" />
     <Compile Include="Tests\LinkedListTests\SplitLinkedListTests.cs" />
+    <Compile Include="Tests\LongestIncreasingSubsequenceTests.cs" />
     <Compile Include="Tests\LRUCache\LRUCacheTests.cs" />
     <Compile Include="Tests\Searching\InvertedIndexTests.cs" />
     <Compile Include="Tests\Sorting\BubbleSortTest.cs" />
