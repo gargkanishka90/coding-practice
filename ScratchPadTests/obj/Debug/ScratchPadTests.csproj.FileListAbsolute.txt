@@ -30,3 +30,5 @@ C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPadTests
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.csprojResolveAssemblyReference.cache
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPadTests\bin\Debug\nunit.framework.dll
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPadTests\bin\Debug\nunit.framework.xml
+C:\coding-practice\coding-practice\ScratchPadTests\bin\Debug\nunit.framework.dll
+C:\coding-practice\coding-practice\ScratchPadTests\bin\Debug\nunit.framework.xml

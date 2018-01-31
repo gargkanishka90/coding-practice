@@ -5,7 +5,7 @@ using System.Linq;
 using NUnit.Framework;
 using ScratchPadTests.Sorting;
 
-namespace ScratchPad.Sorting
+namespace ScratchPad
 {
     [TestFixture]
     public class BubbleSortTest

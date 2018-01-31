@@ -6,14 +6,6 @@ c:\users\kanishka.garg\documents\visual studio 2015\Projects\ScratchPad\ScratchP
 c:\users\kanishka.garg\documents\visual studio 2015\Projects\ScratchPad\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
 c:\users\kanishka.garg\documents\visual studio 2015\Projects\ScratchPad\ScratchPad\obj\Debug\ScratchPad.exe
 c:\users\kanishka.garg\documents\visual studio 2015\Projects\ScratchPad\ScratchPad\obj\Debug\ScratchPad.pdb
-C:\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe.config
-C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.exe
-C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.pdb
-C:\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe
-C:\coding-practice\ScratchPad\bin\Debug\ScratchPad.pdb
-C:\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.dll
-C:\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.xml
-C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
 C:\coding-practice\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe.config
 C:\coding-practice\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe
 C:\coding-practice\coding-practice\ScratchPad\bin\Debug\ScratchPad.pdb
@@ -27,6 +19,19 @@ C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\Debug\ScratchPad.pdb
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.dll
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.xml
-C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\obj\Debug\ScratchPad.exe
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\obj\Debug\ScratchPad.pdb
+C:\coding-practice\coding-practice\ScratchPad\bin\Debug\nunit.framework.dll
+C:\coding-practice\coding-practice\ScratchPad\bin\Debug\nunit.framework.xml
+C:\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe.config
+C:\coding-practice\ScratchPad\bin\Debug\ScratchPad.exe
+C:\coding-practice\ScratchPad\bin\Debug\ScratchPad.pdb
+C:\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.dll
+C:\coding-practice\ScratchPad\bin\Debug\nunit.framework.dll
+C:\coding-practice\ScratchPad\bin\Debug\Newtonsoft.Json.xml
+C:\coding-practice\ScratchPad\bin\Debug\nunit.framework.xml
+C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.exe
+C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.pdb
+C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
+C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\Debug\nunit.framework.dll
+C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\Debug\nunit.framework.xml

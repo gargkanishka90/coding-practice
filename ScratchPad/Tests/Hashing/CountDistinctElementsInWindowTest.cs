@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using ScratchPadTests.Hashing;
 
-namespace ScratchPad.Hashing
+namespace ScratchPad
 {
     public class CountDistinctElementsInWindowTest
     {
