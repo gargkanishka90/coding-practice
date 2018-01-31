@@ -8,6 +8,7 @@ using ScratchPad.Backtracking;
 using ScratchPad.BinaryTree;
 using ScratchPad.DesignPatterns;
 using ScratchPad.DesignPatterns.TemplateMethod;
+using ScratchPad.DynamicProgramming;
 using ScratchPad.Heap;
 using ScratchPad.Leetcode;
 using ScratchPad.LRUCache;
@@ -60,7 +61,7 @@ namespace ScratchPad
                 {16, 7, 10, 11}
             };
             //ArrayRotation.Rotate(mat);
-           var tr = TreeHelpers.CreateRandomTree();
+          // var tr = TreeHelpers.CreateRandomTree();
            // var res = TreeHelpers.LevelOrder(tr);
            //TraversalHelpers.InOrderTraversal(tr);
            //TraversalHelpers.PostOrderTraversal(tr);
@@ -104,17 +105,19 @@ namespace ScratchPad
             //var len = LIS.LISLength(new int[] {10, 9, 2, 5, 3, 7, 101, 18});
             //var normal = NormalizePath.SimplifyPath("/..");
 
-            var subs = WordBreakProblem.WordBreak("ilikelikeiiiicemango",
-                new[]
-                {
-                    "i", "like", "sam", "sung", "samsung", "mobile", "ice", "cream", "icecream", "man", "go", "mango"
-                });
+            //var subs = WordBreakProblem.WordBreak("ilikelikeiiiicemango",
+            //    new[]
+            //    {
+            //        "i", "like", "sam", "sung", "samsung", "mobile", "ice", "cream", "icecream", "man", "go", "mango"
+            //    });
 
 
             
 
-            LCSHelpers.LCS("AGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABAC", "GXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABA");
+            //LCSHelpers.LCS("AGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABAC", "GXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABA");
             //lcs = LCS.Recursive("abcbdababcabcaababababababababababbaababbababababbaabababbbababababbab", "bdcabaabababababababababababaabababababababsbsbbsbababba");
+
+            var test = "ATAGactcatagctac".AllSubSequences();
         }
     }
 }

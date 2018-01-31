@@ -35,3 +35,4 @@ C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.pdb
 C:\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\Debug\nunit.framework.dll
 C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\bin\Debug\nunit.framework.xml
+C:\Users\kanishka.garg\Documents\Coding-Practice\coding-practice\ScratchPad\obj\Debug\ScratchPad.csprojResolveAssemblyReference.cache

@@ -74,7 +74,9 @@
     <Compile Include="DesignPatterns\TemplateMethod\TemplateMethodPattern.cs" />
     <Compile Include="DesignPatterns\TemplateMethod\UpsOrderShipment.cs" />
     <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
+    <Compile Include="DynamicProgramming\LongestRepeatedSubsequence.cs" />
     <Compile Include="DynamicProgramming\RobotGrid.cs" />
+    <Compile Include="DynamicProgramming\StringHelpers.cs" />
     <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Hashing\FrequencySort.cs" />
@@ -123,7 +125,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\InvertedIndex.cs" />
-    <Compile Include="Searching\LCS.cs" />
+    <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="String\FindFirstUniqueCharacter.cs" />
