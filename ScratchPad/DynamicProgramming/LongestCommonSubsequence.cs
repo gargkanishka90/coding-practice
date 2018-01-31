@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ScratchPad.Searching
+namespace ScratchPad
 {
     public class LCSHelpers
     {
