@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ScratchPad.Leetcode
+{
+    public class WordBreakProblem
+    {
+        // { i, like, sam, sung, samsung, mobile, ice, cream, icecream, man, go, mango
+        // To Search: ilike
+        public static IList<string> WordBreak1(string input, string[] dictionary)
+        {
+            var result = new List<string>();
+            var set = new HashSet<string>();
+            foreach (var entry in dictionary)
+            {
+                set.Add(entry);
+            }
+            WordBreakRec(input, result, set, 0);
+            return result;
+        }
+
+        public static IList<string> WordBreakRec(string input, IList<string> result, HashSet<string> set, int startIndex)
+        {
+            if (startIndex == input.Length - 1)
+            {
+                return result;
+            }
+
+            for (var i = 1; i <= input.Length; i++)
+            {
+                var temp = input.Substring(0, i);
+                if (set.Contains(temp))
+                {
+                    result.Add(temp);
+                    WordBreakRec(input, result, set, i+1);
+                }
+            }
+            return result;
+        }
+    }
+}

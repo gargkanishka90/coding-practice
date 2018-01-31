@@ -48,20 +48,50 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\ArrayPairSum.cs" />
+    <Compile Include="Arrays\ArrayShuffle.cs" />
     <Compile Include="Arrays\MatrixZero.cs" />
     <Compile Include="Arrays\MaxContiguousSubArray.cs" />
     <Compile Include="Arrays\MissingElement.cs" />
-    <Compile Include="BinaryTree\PreOrder.cs" />
+    <Compile Include="Arrays\WordSearch.cs" />
+    <Compile Include="Backtracking\Powerset.cs" />
+    <Compile Include="Backtracking\Subset.cs" />
+    <Compile Include="BinaryTree\TraversalHelpers.cs" />
     <Compile Include="BinaryTree\TreeHelpers.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
+    <Compile Include="BinaryTree\TreeUtilities.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
+    <Compile Include="DesignPatterns\Strategy\StrategyPattern.cs" />
+    <Compile Include="DesignPatterns\Strategy\Customer.cs" />
+    <Compile Include="DesignPatterns\Strategy\IBillingStrategy.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\FedExOrderShipment.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\OrderShipment.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\TemplateMethodPattern.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\UpsOrderShipment.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
     <Compile Include="Heap\MyHeap.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
+    <Compile Include="Leetcode\ArrayRotation.cs" />
+    <Compile Include="Leetcode\CountAndSayClass.cs" />
+    <Compile Include="Leetcode\DecodeWays.cs" />
+    <Compile Include="Leetcode\IntersectClass.cs" />
+    <Compile Include="Leetcode\LIS.cs" />
+    <Compile Include="Leetcode\Match.cs" />
+    <Compile Include="Leetcode\MinStack.cs" />
+    <Compile Include="Leetcode\MissingClass.cs" />
+    <Compile Include="Leetcode\MoveZerosClass.cs" />
+    <Compile Include="Leetcode\BitManipulationClass.cs" />
+    <Compile Include="Leetcode\NormalizePath.cs" />
+    <Compile Include="Leetcode\PlusOne.cs" />
+    <Compile Include="Leetcode\ReverseBits.cs" />
+    <Compile Include="Leetcode\RobotPath.cs" />
+    <Compile Include="Leetcode\Rotate2DArrayClass.cs" />
     <Compile Include="Leetcode\SortColors.cs" />
+    <Compile Include="Leetcode\ThreeSum.cs" />
     <Compile Include="Leetcode\TwoSum.cs" />
+    <Compile Include="Leetcode\ValidParantheses.cs" />
+    <Compile Include="Leetcode\WordBreakProblem.cs" />
     <Compile Include="LinkedList\AddTwoNumbers.cs" />
     <Compile Include="LinkedList\DeleteMnodesAfterEveryNnodes.cs" />
     <Compile Include="LinkedList\LinkedListCycle.cs" />
@@ -78,6 +108,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\InvertedIndex.cs" />
+    <Compile Include="Searching\LCS.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="String\FindFirstUniqueCharacter.cs" />
@@ -92,6 +123,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

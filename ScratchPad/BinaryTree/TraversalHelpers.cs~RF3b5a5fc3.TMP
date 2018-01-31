@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
+using ScratchPadTests.BinaryTree;
+
+namespace ScratchPad.BinaryTree
+{
+    public class TraversalHelpers
+    {
+        public static void InOrderTraversal(TreeNode root)
+        {
+            if(root == null) return;
+
+            InOrderTraversal(root.left);
+            Console.WriteLine(root.data);
+            InOrderTraversal(root.right);
+        }
+
+        public static void PreOrderTraversal(TreeNode root)
+        {
+            if (root != null)
+            {
+                Console.WriteLine(root.data);
+                PreOrderTraversal(root.left);
+                PreOrderTraversal(root.right);
+            }
+        }
+
+        public static void PostOrderTraversal(TreeNode root)
+        {
+            if (root == null) return;
+            PostOrderTraversal(root.left);
+            PostOrderTraversal(root.right);
+            Console.WriteLine(root.data);
+        }
+
+        public static IList<IList<int>> LevelOrder(TreeNode root)
+        {
+            var res = new List<IList<int>>();
+            LevelOrderUtil(root, 0, res);
+            return res;
+        }
+
+        private static void LevelOrderUtil(TreeNode root, int level, IList<IList<int>> res)
+        {
+            if (root == null) return;
+
+            if (res.Count <= level)
+                res.Add(new List<int>());
+            res[level].Add(root.data);
+            if (root.left != null)
+            {
+                LevelOrderUtil(root.left, level + 1, res);
+            }
+            if (root.right != null)
+            {
+                LevelOrderUtil(root.right, level + 1, res);
+            }
+            return;
+        }
+    }
+}

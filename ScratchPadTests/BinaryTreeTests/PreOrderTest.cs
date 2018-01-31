@@ -7,7 +7,7 @@ namespace ScratchPad.BinaryTreeTests
         public static void Run()
         {
             var root = TreeHelpers.CreateRandomTree();
-            PreOrder.Traverse(root);
+            //PreOrder.Traverse(root);
         }
 
 
