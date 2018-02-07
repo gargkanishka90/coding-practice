@@ -65,6 +65,9 @@
     <Compile Include="BinaryTree\TreeHelpers.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="BinaryTree\TreeUtilities.cs" />
+    <Compile Include="BST\BinarySearchTree.cs" />
+    <Compile Include="BST\BSTNode.cs" />
+    <Compile Include="BST\BSTUtilities.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="DesignPatterns\Strategy\StrategyPattern.cs" />
     <Compile Include="DesignPatterns\Strategy\Customer.cs" />
@@ -138,6 +141,7 @@
     <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
+    <Compile Include="Tests\BST\BinarySearchTreeTests.cs" />
     <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
     <Compile Include="Tests\Hashing\FrequencySortTest.cs" />

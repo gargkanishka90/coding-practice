@@ -117,7 +117,8 @@ namespace ScratchPad
             //LCSHelpers.LCS("AGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABACAGGTABABABABABABABAC", "GXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABAGXTXAYBABABABAAAABABABABA");
             //lcs = LCS.Recursive("abcbdababcabcaababababababababababbaababbababababbaabababbbababababbab", "bdcabaabababababababababababaabababababababsbsbbsbababba");
 
-            var test = "ATAGactcatagctac".AllSubSequences();
+            //var test = "ATAGactcatagctac".AllSubSequences();
+            var t = LongestRepeatedSubsequence.Find("AAB");
         }
     }
 }

@@ -8,26 +8,31 @@ namespace ScratchPad
 {
     public class LCSHelpers
     {
-        public static void LCS(string a, string b)
+        /// <summary>
+        /// This is the DP Version of LCS Problem's Solution. (Tabulation - BottomUp)
+        /// </summary>
+        /// <param name="firstString"></param>
+        /// <param name="secondString"></param>
+        public static void LCS(string firstString, string secondString)
         {
             var start = DateTime.UtcNow.Millisecond;
 
-            if (string.IsNullOrEmpty(a) || string.IsNullOrEmpty(b)) return;
+            if (string.IsNullOrEmpty(firstString) || string.IsNullOrEmpty(secondString)) return;
 
-            var memory = new int[a.Length+1, b.Length+1];
-            var printMemory = new int[a.Length + 1, b.Length + 1];
+            var memory = new int[firstString.Length+1, secondString.Length+1];
+            var printMemory = new int[firstString.Length + 1, secondString.Length + 1];
 
-            for (var k = 1; k <= a.Length; k++)
+            for (var k = 1; k <= firstString.Length; k++)
                 memory[k, 0] = 0;
 
-            for (var k = 1; k <= b.Length; k++)
+            for (var k = 1; k <= secondString.Length; k++)
                 memory[0, k] = 0;
 
-            for (var i = 1; i <= a.Length; i++)
+            for (var i = 1; i <= firstString.Length; i++)
             {
-                for (var j = 1; j <= b.Length; j++)
+                for (var j = 1; j <= secondString.Length; j++)
                 {
-                    if (a[i-1] == b[j-1])
+                    if (firstString[i-1] == secondString[j-1])
                     {
                         printMemory[i, j] = 0; // diagonal
                         memory[i, j] = 1 + memory[i - 1, j - 1];
@@ -44,9 +49,9 @@ namespace ScratchPad
                 }
             }
 
-            PrintLCS(a, printMemory, a.Length, b.Length);
+            PrintLCS(firstString, printMemory, firstString.Length, secondString.Length);
             Console.WriteLine();
-            Console.WriteLine("Longest: " + memory[a.Length, b.Length]);
+            Console.WriteLine("Longest: " + memory[firstString.Length, secondString.Length]);
             var end = DateTime.UtcNow.Millisecond;
             Console.WriteLine("Time Taken: " +  (end - start).ToString() + " ms");
         }
