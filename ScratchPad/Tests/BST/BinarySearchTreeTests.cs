@@ -23,5 +23,27 @@ namespace ScratchPad.Tests.BST
             test = BSTUtilities.Search(tree._root, 70);
             Console.WriteLine(test?.data);
         }
+
+        [Test]
+        public static void GetMinimumValueBstTest()
+        {
+            var tree = BSTUtilities.CreateRandomBST();
+            var test = BSTUtilities.Search(tree._root, 70);
+            tree.InOrderTraversal();
+            Console.WriteLine();
+            Console.WriteLine(BSTUtilities.GetMinimumValue(tree._root));
+            Console.WriteLine(BSTUtilities.GetMinimumValue(tree._root.right));
+        }
+
+        [Test]
+        public static void DeleteKeyFromBstTest()
+        {
+            var tree = BSTUtilities.CreateRandomBST();
+            var test = BSTUtilities.Search(tree._root, 70);
+            tree.InOrderTraversal();
+            Console.WriteLine();
+            var t = BSTUtilities.Delete(tree._root, 70);
+            //Console.WriteLine(BSTUtilities.GetMinimumValue(tree._root.right));
+        }
     }
 }
