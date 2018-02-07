@@ -68,6 +68,7 @@
     <Compile Include="BST\BinarySearchTree.cs" />
     <Compile Include="BST\BSTNode.cs" />
     <Compile Include="BST\BSTUtilities.cs" />
+    <Compile Include="BST\PreOrderToBST.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="DesignPatterns\Strategy\StrategyPattern.cs" />
     <Compile Include="DesignPatterns\Strategy\Customer.cs" />

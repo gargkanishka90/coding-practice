@@ -45,5 +45,12 @@ namespace ScratchPad.Tests.BST
             var t = BSTUtilities.Delete(tree._root, 70);
             //Console.WriteLine(BSTUtilities.GetMinimumValue(tree._root.right));
         }
+
+        [Test]
+        public static void PreorderToBSTTest()
+        {
+            var tr = PreOrderToBST.Construct(new[] {10, 5, 1, 7, 40, 50});
+            tr.InOrderTraversal();
+        }
     }
 }
