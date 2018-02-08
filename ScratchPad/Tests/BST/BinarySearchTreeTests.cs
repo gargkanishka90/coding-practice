@@ -52,5 +52,43 @@ namespace ScratchPad.Tests.BST
             var tr = PreOrderToBST.Construct(new[] {10, 5, 1, 7, 40, 50});
             tr.InOrderTraversal();
         }
+
+        [Test]
+        public static void FindPathTest()
+        {
+            var tr = PreOrderToBST.Construct(new[] { 10, 5, 1, 7, 40, 50 });
+            var path = BSTUtilities.FindPath(tr._root, 50);
+            foreach (var i in path)
+            {
+                Console.Write(i + ",");
+            }
+
+            Console.WriteLine();
+
+            path = BSTUtilities.FindPath(tr._root, 7);
+            foreach (var i in path)
+            {
+                Console.Write(i + ",");
+            }
+
+            Console.WriteLine();
+            path = BSTUtilities.FindPath(tr._root, 5);
+            foreach (var i in path)
+            {
+                Console.Write(i + ",");
+            }
+
+        }
+
+        [Test]
+        public static void LcaTest()
+        {
+            var tr = PreOrderToBST.Construct(new[] { 10, 5, 1, 7, 40, 50 });
+            Console.WriteLine("7 and 50: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(7), new BSTNode(50)));
+            Console.WriteLine("7 and 1: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(7), new BSTNode(1)));
+            Console.WriteLine("1 and 10: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(1), new BSTNode(10)));
+            Console.WriteLine("7 and 40: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(7), new BSTNode(40)));
+            Console.WriteLine("50 and 40: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(50), new BSTNode(40)));
+        }
     }
 }

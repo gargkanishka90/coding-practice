@@ -20,8 +20,6 @@ namespace ScratchPad.BST
             _root = InsertRecursive(_root, key);
         }
 
-        
-
         private BSTNode InsertRecursive(BSTNode root, int key)
         {
             if (root == null)

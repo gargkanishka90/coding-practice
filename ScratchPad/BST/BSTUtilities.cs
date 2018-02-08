@@ -1,4 +1,7 @@
-﻿namespace ScratchPad.BST
+﻿using System;
+using System.Collections.Generic;
+
+namespace ScratchPad.BST
 {
     public class BSTUtilities
     {
@@ -65,6 +68,37 @@
                 current = current.left;
             }
             return current.data;
+        }
+
+        public static List<int> FindPath(BSTNode root, int k)
+        {
+            var result = new List<int>();
+            if (root == null) return result;
+            FindPathHelper(root, k, result);
+            return result;
+        }
+
+        private static void FindPathHelper(BSTNode root, int k, List<int> result)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            if (root.data == k)
+            {
+                result.Add(root.data);
+                return;
+            }
+            else if (root.data < k)
+            {
+                result.Add(root.data);
+                FindPathHelper(root.right, k, result);
+            } else if (root.data > k)
+            {
+                result.Add(root.data);
+                FindPathHelper(root.left, k, result);
+            }
         }
     }
 }
