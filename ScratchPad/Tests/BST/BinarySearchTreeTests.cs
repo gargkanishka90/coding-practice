@@ -1,6 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using ScratchPad.BST;
+using ScratchPadTests.BinaryTree;
 
 namespace ScratchPad.Tests.BST
 {
@@ -90,5 +91,19 @@ namespace ScratchPad.Tests.BST
             Console.WriteLine("7 and 40: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(7), new BSTNode(40)));
             Console.WriteLine("50 and 40: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(50), new BSTNode(40)));
         }
+
+        [Test]
+        public static void FindCeilBSTTest()
+        {
+            var tr = PreOrderToBST.Construct(new[] { 8,4,2,6,12,10,14 });
+
+            for (var i = 0; i < 16; i++)
+            {
+                Console.WriteLine($"{i} : " + FloorAndCeilBST.FindCeilNode(tr._root, i)?.data);
+            }
+            
+        }
+
+        
     }
 }

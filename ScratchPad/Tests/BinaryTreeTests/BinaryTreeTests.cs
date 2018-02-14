@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
+using ScratchPad.BinaryTree;
 using ScratchPadTests.BinaryTree;
 
 namespace ScratchPad
@@ -32,6 +34,67 @@ namespace ScratchPad
         {
             var root = TreeHelpers.CreateRandomTree();
             TreeTraveral.LeverOrderTraversal(root);
+        }
+
+        [Test]
+        public static void FindPathTest()
+        {
+            var root = TreeHelpers.CreateRandomTree();
+            var path = TreeHelpers.FindPath(root, 810);
+
+            foreach (var node in path)
+            {
+                Console.Write(node.data + " , ");
+            }
+
+            Console.WriteLine();
+            path = TreeHelpers.FindPath(root, 58);
+
+            foreach (var node in path)
+            {
+                Console.Write(node.data + " , ");
+            }
+            Console.WriteLine();
+
+            path = TreeHelpers.FindPath(root, 8);
+
+            foreach (var node in path)
+            {
+                Console.Write(node.data + " , ");
+            }
+            Console.WriteLine();
+
+            path = TreeHelpers.FindPath(root, 6);
+
+            foreach (var node in path)
+            {
+                Console.Write(node.data + " , ");
+            }
+            Console.WriteLine();
+
+            path = TreeHelpers.FindPath(root, 77);
+
+            if (path != null)
+            {
+                foreach (var node in path)
+                {
+                    Console.Write(node.data + " , ");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No Path Exists.");
+            }
+            Console.WriteLine();
+        }
+
+        [Test]
+        public static void ComputeLeavesTest()
+        {
+            var tr = TreeHelpers.CreateRandomTree();
+
+            var leaves = TreeHelpers.ComputeLeaves(tr);
+
         }
     }
 }

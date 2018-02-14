@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using ScratchPad.Leetcode;
 
 namespace ScratchPadTests
 {
@@ -16,6 +17,8 @@ namespace ScratchPadTests
             //TrieTest.Run();
             //UniqueCharactersTest.Run();
             //ReverseSubListTests.Run();
+           // GenerateAllPermutationsTest.Run();
+            PhoneNumberLetterCombination.LetterCombinations("32454554");
         }
     }
 }

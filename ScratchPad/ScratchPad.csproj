@@ -68,6 +68,7 @@
     <Compile Include="BST\BinarySearchTree.cs" />
     <Compile Include="BST\BSTNode.cs" />
     <Compile Include="BST\BSTUtilities.cs" />
+    <Compile Include="BST\FloorAndCeilBST.cs" />
     <Compile Include="BST\LowestCommonAncestorBST.cs" />
     <Compile Include="BST\PreOrderToBST.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Leetcode\MoveZerosClass.cs" />
     <Compile Include="Leetcode\BitManipulationClass.cs" />
     <Compile Include="Leetcode\NormalizePath.cs" />
+    <Compile Include="Leetcode\PhoneNumberLetterCombination.cs" />
     <Compile Include="Leetcode\PlusOne.cs" />
     <Compile Include="Leetcode\ReverseBits.cs" />
     <Compile Include="Leetcode\RobotPath.cs" />
