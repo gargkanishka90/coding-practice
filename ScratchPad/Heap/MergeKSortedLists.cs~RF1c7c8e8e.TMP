@@ -1,0 +1,126 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ScratchPad.Heap
+{
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+
+        public ListNode(int x)
+        {
+            val = x;
+        }
+    }
+
+    public class MergeKSortedLists
+    {
+        // head1 -> 1 -> 2 -> 3
+        // head2 -> 7 -> 9 -> 11
+        // head3 -> 4 -> 6 -> 10
+        public ListNode MergeKLists(ListNode[] lists)
+        {
+            var dummyHead = new ListNode(-1);
+
+            var minHeap = new MinHeap();
+
+            foreach (var head in lists)
+            {
+                
+            }
+
+            // 1. Make a min-heap with k head elements from the list
+            // 2. Extract Min Element from the heap and add it to output list and move head of that list to head.next
+
+            return dummyHead;
+        }
+    }
+
+    public class HeapItem
+    {
+        public int data { get; set; }
+        public int listIndex { get; set; }
+    }
+    public class MinHeap
+    {
+        private List<HeapItem> _heap;
+
+        public MinHeap()
+        {
+            _heap = new List<HeapItem>();
+        }
+
+        public void Insert(HeapItem newItem)
+        {
+            _heap.Add(newItem);
+            HeapifyUp();
+        }
+
+        private void HeapifyUp()
+        {
+            var index = _heap.Count - 1;
+
+            while (index > 0)
+            {
+                var parentIndex = (index - 1) / 2;
+                if (_heap[parentIndex].data < _heap[index].data)
+                {
+                    Swap(parentIndex, index);
+                    index = parentIndex;
+                }
+                else
+                {
+                    break;
+                }
+                
+            }
+        }
+
+        public HeapItem ExtractMin()
+        {
+            var min = _heap[0];
+            _heap[0] = _heap[_heap.Count - 1];
+            HeapifyDown(0);
+            return min;
+        }
+
+        private void HeapifyDown(int index)
+        {
+            var left = 2 * index + 1;
+            var right = 2 * index + 2;
+            var min = -1;
+
+            if (index < _heap.Count && _heap[left].data < _heap[index].data)
+            {
+                min = left;
+            }
+            else
+            {
+                min = index;
+            }
+
+            if (index < _heap.Count && _heap[right].data < _heap[min].data)
+            {
+                min = right;
+            }
+
+            if (min != index)
+            {
+                Swap(min, index);
+                HeapifyDown(min);
+            }
+        }
+
+        private void Swap(int left, int right)
+        {
+            var temp = _heap[left];
+            _heap[left] = _heap[right];
+            _heap[right] = temp;
+        }
+    }
+}

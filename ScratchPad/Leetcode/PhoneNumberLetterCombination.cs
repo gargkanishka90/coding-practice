@@ -38,5 +38,34 @@ namespace ScratchPad.Leetcode
                 }
             }
         }
+
+        public static IList<string> LetterCombinationsIterative(string digits)
+        {
+            var result = new List<string>();
+
+            var numberToLetters = new[] { "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+
+            if (string.IsNullOrEmpty(digits))
+                return result;
+
+            if (digits.Any(x => !char.IsDigit(x)))
+                return result;
+
+            var queue = new Queue<string>();
+            queue.Enqueue("");
+
+            for (var i = 0; i < digits.Length; i++)
+            {
+                while (queue.Peek().Length == i)
+                {
+                    var temp = queue.Dequeue();
+                    foreach (var letter in numberToLetters[digits[i] - 48])
+                    {
+                        queue.Enqueue(temp + letter);
+                    }
+                }
+            }
+            return queue.ToList();
+        }
     }
 }

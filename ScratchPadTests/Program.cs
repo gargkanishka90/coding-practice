@@ -89,8 +89,11 @@ namespace ScratchPad
             //"AAB"
 
             //WordSearch.Exist(board, "aab");
-           // Powerset.Generate(new []{1,2,3,4});
-
+           var sss = new Powerset().Generate1(new []{1,2,3,4});
+            foreach (var x in sss)
+            {
+                Console.WriteLine(string.Join(",", x));
+            }
             var matrix = new int[,]
             {
                 {1, 0, 0, 0},
