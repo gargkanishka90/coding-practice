@@ -180,6 +180,8 @@
     <Compile Include="Trie\ITrie.cs" />
     <Compile Include="Trie\Trie.cs" />
     <Compile Include="Trie\TrieNode.cs" />
+    <Compile Include="Graphs\GraphNode.cs" />
+    <Compile Include="Tests\Graphs\GraphTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -187,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests\Graphs\" />
+    <Folder Include="Graphs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
