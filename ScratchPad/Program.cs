@@ -30,7 +30,7 @@ namespace ScratchPadTests
             //    {'i', 'h', 'k', 'r'},
             //    {'i', 'f', 'l', 'v'}
             //};
-            var dict = new [] { "oath", "pea", "eat", "rain" };
+           // var dict = new [] { "oath", "pea", "eat", "rain" };
            // var f = new WordSearch2().FindWords(new char[,] { {'a'} }, new []{"a"});
            MergeKSortedArraysTest.Run();
         }
