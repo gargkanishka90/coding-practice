@@ -15,7 +15,6 @@ C:/Users/kanishka.garg/Documents/Coding-Practice/coding-practice/ScratchPad/obj/
 /Users/kanishkagarg/Projects/gargkanishka90/coding-practice.git/ScratchPad/bin/Debug/nunit.framework.dll
 /Users/kanishkagarg/Projects/gargkanishka90/coding-practice.git/ScratchPad/bin/Debug/Newtonsoft.Json.xml
 /Users/kanishkagarg/Projects/gargkanishka90/coding-practice.git/ScratchPad/bin/Debug/nunit.framework.xml
-/Users/kanishkagarg/Projects/gargkanishka90/coding-practice.git/ScratchPad/obj/Debug/ScratchPad.csprojResolveAssemblyReference.cache
 /Users/kanishkagarg/Projects/gargkanishka90/coding-practice.git/ScratchPad/obj/Debug/ScratchPad.csproj.CoreCompileInputs.cache
 /Users/kanishkagarg/Projects/gargkanishka90/coding-practice.git/ScratchPad/obj/Debug/ScratchPad.exe
 /Users/kanishkagarg/Projects/gargkanishka90/coding-practice.git/ScratchPad/obj/Debug/ScratchPad.pdb
