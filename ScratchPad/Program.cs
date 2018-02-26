@@ -23,13 +23,13 @@ namespace ScratchPadTests
             //{
             //    Console.WriteLine(x);
             //}
-            var board = new char[,]
-            {
-                {'o', 'a', 'a', 'n'},
-                {'e', 't', 'a', 'e'},
-                {'i', 'h', 'k', 'r'},
-                {'i', 'f', 'l', 'v'}
-            };
+            //var board = new char[,]
+            //{
+            //    {'o', 'a', 'a', 'n'},
+            //    {'e', 't', 'a', 'e'},
+            //    {'i', 'h', 'k', 'r'},
+            //    {'i', 'f', 'l', 'v'}
+            //};
             var dict = new [] { "oath", "pea", "eat", "rain" };
            // var f = new WordSearch2().FindWords(new char[,] { {'a'} }, new []{"a"});
            MergeKSortedArraysTest.Run();
