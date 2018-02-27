@@ -10,6 +10,7 @@ namespace ScratchPad.BinaryTree
 {
     public class TraversalHelpers
     {
+        #region Code
         public static void InOrderTraversal(TreeNode root)
         {
             if(root == null) return;
@@ -18,6 +19,7 @@ namespace ScratchPad.BinaryTree
             Console.WriteLine(root.data);
             InOrderTraversal(root.right);
         }
+        #endregion
 
         public static IList<int> PreOrderTraversal(TreeNode root)
         {
