@@ -3,6 +3,7 @@ using NUnit.Framework;
 using ScratchPad.BinaryTree;
 using ScratchPad.BST;
 using ScratchPad.Utils;
+using ScratchPadTests.BinaryTree;
 
 namespace ScratchPad
 {
@@ -44,7 +45,19 @@ namespace ScratchPad
         [Test]
         public static void FindPathTest()
         {
-            var root = TreeUtils.CreateRandomTree();
+            var node1 = new TreeNode(6);
+            var node2 = new TreeNode(8);
+            var node3 = new TreeNode(10);
+            var node4 = new TreeNode(16);
+            var node5 = new TreeNode(58);
+            var node6 = new TreeNode(810);
+            node1.left = node2;
+            node1.right = node3;
+            node2.left = node4;
+            node2.right = node5;
+            node3.left = node6;
+
+            var root = node1;
             var path = BinaryTreeLca.FindPath(root, 810);
 
             foreach (var node in path)

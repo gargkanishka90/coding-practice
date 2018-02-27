@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ScratchPad.BST;
 using ScratchPadTests.BinaryTree;
 
 namespace ScratchPad.BinaryTree
@@ -11,18 +12,16 @@ namespace ScratchPad.BinaryTree
     {
         public static TreeNode CreateRandomTree()
         {
-            var node1 = new TreeNode(6);
-            var node2 = new TreeNode(8);
-            var node3 = new TreeNode(10);
-            var node4 = new TreeNode(16);
-            var node5 = new TreeNode(58);
-            var node6 = new TreeNode(810);
-            node1.left = node2;
-            node1.right = node3;
-            node2.left = node4;
-            node2.right = node5;
-            node3.left = node6;
-            return node1;
+            var r = new Random();
+            var size = r.Next(0, 32);
+            var arr = new int[size];
+            for (var pos = 0; pos < size; pos++)
+            {
+                arr[pos] = r.Next(1, 100);
+            }
+
+            var root = SortedArrayToBinarySearchTree.SortedArrayToBST(arr);
+            return root;
         }
 
         public static int Height(TreeNode root)
