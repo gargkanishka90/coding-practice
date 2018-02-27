@@ -1,6 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using ScratchPad.BinaryTree;
+using ScratchPad.BST;
 using ScratchPad.Utils;
 
 namespace ScratchPad
@@ -34,8 +35,10 @@ namespace ScratchPad
         [Test]
         public static void LevelOrderTest()
         {
-            var root = TreeUtils.CreateRandomTree();
-            LevelOrderTraversal.LevelOrderTraversalIterative2(root);
+            var root = SortedArrayToBinarySearchTree.SortedArrayToBST(new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15});
+            LevelOrderTraversal.LevelOrderTraversalIterative1(root);
+            Console.WriteLine();
+            LevelOrderTraversal.LevelOrderTraversalIterative3(root);
         }
 
         [Test]
@@ -97,6 +100,20 @@ namespace ScratchPad
 
             var leaves = BinaryTreeComputeLeaves.ComputeLeaves(tr);
             PrintUtils.PrintList(leaves);
+        }
+
+        [Test]
+        public static void SameTreeTest()
+        {
+            var root1 = TreeUtils.CreateRandomTree();
+            var root2 = TreeUtils.CreateRandomTree();
+            Assert.AreEqual(true, BinaryTreeSame.IsSameTreeIterative(root1, root2));
+            Assert.AreEqual(true, BinaryTreeSame.IsSameTreeRecursive(root1, root2));
+
+            var root3 = SortedArrayToBinarySearchTree.SortedArrayToBST(new[] { 1, 2, 3 });
+            var root4 = SortedArrayToBinarySearchTree.SortedArrayToBST(new[] { 1, 3, 2 });
+            Assert.AreEqual(false, BinaryTreeSame.IsSameTreeIterative(root3, root4));
+            Assert.AreEqual(false, BinaryTreeSame.IsSameTreeRecursive(root3, root4));
         }
     }
 }

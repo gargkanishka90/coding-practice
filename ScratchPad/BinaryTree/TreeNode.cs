@@ -6,6 +6,7 @@ namespace ScratchPadTests.BinaryTree
     {
         public TreeNode left, right;
         public int data;
+        public int level;
 
         public TreeNode()
         {

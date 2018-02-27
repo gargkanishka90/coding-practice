@@ -69,6 +69,7 @@
     <Compile Include="BinaryTree\BinaryTreeComputeLeaves.cs" />
     <Compile Include="BinaryTree\BinaryTreeLca.cs" />
     <Compile Include="BinaryTree\BinaryTreePathSum.cs" />
+    <Compile Include="BinaryTree\BinaryTreeSame.cs" />
     <Compile Include="BinaryTree\BinaryTreeSymmetric.cs" />
     <Compile Include="BinaryTree\LevelOrderTraversal.cs" />
     <Compile Include="BinaryTree\PostOrderTraversal.cs" />
