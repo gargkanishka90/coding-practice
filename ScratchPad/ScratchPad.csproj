@@ -189,6 +189,7 @@
     <Compile Include="Graphs\Graph.cs" />
     <Compile Include="Tests\Graphs\GraphTests.cs" />
     <Compile Include="Graphs\BFS.cs" />
+    <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
