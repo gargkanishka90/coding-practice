@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using ScratchPad.BinaryTree;
-using ScratchPadTests.BinaryTree;
+using ScratchPad.Utils;
 
 namespace ScratchPad
 {
@@ -11,22 +11,22 @@ namespace ScratchPad
         [Test]
         public static void PreOrderTest()
         {
-            var root = TreeHelpers.CreateRandomTree();
-            TreeTraveral.PreOrderTraverse(root);
+            var root = TreeUtils.CreateRandomTree();
+            PrintUtils.PrintList(PreOrderTraversal.PreOrderIterative(root));
         }
 
         [Test]
         public static void PostOrderTest()
         {
-            var root = TreeHelpers.CreateRandomTree();
-            TreeTraveral.PostOrderTraverse(root);
+            var root = TreeUtils.CreateRandomTree();
+            PrintUtils.PrintList(PostOrderTraversal.PostOrderIterative(root));
         }
 
         [Test]
         public static void InOrderTest()
         {
-            var root = TreeHelpers.CreateRandomTree();
-            TreeTraveral.InOrderTraverse(root);
+            var root = TreeUtils.CreateRandomTree();
+            InOrderTraversal.InOrderTraverselIterative(root);
             Console.WriteLine();
             InOrderTraversal.InOrderTraverselIterative(root);
         }
@@ -34,15 +34,15 @@ namespace ScratchPad
         [Test]
         public static void LevelOrderTest()
         {
-            var root = TreeHelpers.CreateRandomTree();
-            TreeTraveral.LeverOrderTraversal(root);
+            var root = TreeUtils.CreateRandomTree();
+            LevelOrderTraversal.LeverOrderTraversal2(root);
         }
 
         [Test]
         public static void FindPathTest()
         {
-            var root = TreeHelpers.CreateRandomTree();
-            var path = TreeHelpers.FindPath(root, 810);
+            var root = TreeUtils.CreateRandomTree();
+            var path = BinaryTreeLca.FindPath(root, 810);
 
             foreach (var node in path)
             {
@@ -50,7 +50,7 @@ namespace ScratchPad
             }
 
             Console.WriteLine();
-            path = TreeHelpers.FindPath(root, 58);
+            path = BinaryTreeLca.FindPath(root, 58);
 
             foreach (var node in path)
             {
@@ -58,7 +58,7 @@ namespace ScratchPad
             }
             Console.WriteLine();
 
-            path = TreeHelpers.FindPath(root, 8);
+            path = BinaryTreeLca.FindPath(root, 8);
 
             foreach (var node in path)
             {
@@ -66,7 +66,7 @@ namespace ScratchPad
             }
             Console.WriteLine();
 
-            path = TreeHelpers.FindPath(root, 6);
+            path = BinaryTreeLca.FindPath(root, 6);
 
             foreach (var node in path)
             {
@@ -74,7 +74,7 @@ namespace ScratchPad
             }
             Console.WriteLine();
 
-            path = TreeHelpers.FindPath(root, 77);
+            path = BinaryTreeLca.FindPath(root, 77);
 
             if (path != null)
             {
@@ -93,10 +93,10 @@ namespace ScratchPad
         [Test]
         public static void ComputeLeavesTest()
         {
-            var tr = TreeHelpers.CreateRandomTree();
+            var tr = TreeUtils.CreateRandomTree();
 
-            var leaves = TreeHelpers.ComputeLeaves(tr);
-
+            var leaves = BinaryTreeComputeLeaves.ComputeLeaves(tr);
+            PrintUtils.PrintList(leaves);
         }
     }
 }

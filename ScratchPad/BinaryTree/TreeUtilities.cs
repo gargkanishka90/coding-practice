@@ -7,29 +7,45 @@ using ScratchPadTests.BinaryTree;
 
 namespace ScratchPad.BinaryTree
 {
-    public class TreeUtilities
+    public static class TreeUtils
     {
-        public static TreeNode SortedArrayToBST(int[] nums)
+        public static TreeNode CreateRandomTree()
         {
-            if (nums.Length == 0) return null;
-            return SortedArrayToBSTHelper(nums, 0, nums.Length - 1);
+            var node1 = new TreeNode(6);
+            var node2 = new TreeNode(8);
+            var node3 = new TreeNode(10);
+            var node4 = new TreeNode(16);
+            var node5 = new TreeNode(58);
+            var node6 = new TreeNode(810);
+            node1.left = node2;
+            node1.right = node3;
+            node2.left = node4;
+            node2.right = node5;
+            node3.left = node6;
+            return node1;
         }
 
-        private static TreeNode SortedArrayToBSTHelper(int[] nums, int start, int end)
+        public static int Height(TreeNode root)
         {
-            if (start > end)
+            if (root == null) return 0;
+
+            var left = Height(root.left);
+            var right = Height(root.right);
+            return 1 + Math.Max(left, right);
+        }
+
+        public static void PrintTree(TreeNode root)
+        {
+            if (root == null)
             {
-                return null;
+                Console.Write("There are no elements in the tree.");
+                return;
             }
 
-            var mid = (end + start) / 2;
+            Console.WriteLine(root.data);
 
-            var result = new TreeNode(nums[mid]);
-
-            result.left = SortedArrayToBSTHelper(nums, start, mid - 1);
-            result.right = SortedArrayToBSTHelper(nums, mid + 1, end);
-
-            return result;
+            PrintTree(root.left);
+            PrintTree(root.right);
         }
     }
 }

@@ -66,9 +66,14 @@
     <Compile Include="Arrays\WordSearch.cs" />
     <Compile Include="Backtracking\Powerset.cs" />
     <Compile Include="Backtracking\Subset.cs" />
-    <Compile Include="BinaryTree\TraversalHelpers.cs" />
-    <Compile Include="BinaryTree\TreeTraveral.cs" />
-    <Compile Include="BinaryTree\TreeHelpers.cs" />
+    <Compile Include="BinaryTree\BinaryTreeComputeLeaves.cs" />
+    <Compile Include="BinaryTree\BinaryTreeLca.cs" />
+    <Compile Include="BinaryTree\BinaryTreePathSum.cs" />
+    <Compile Include="BinaryTree\BinaryTreeSymmetric.cs" />
+    <Compile Include="BinaryTree\LevelOrderTraversal.cs" />
+    <Compile Include="BinaryTree\PostOrderTraversal.cs" />
+    <Compile Include="BinaryTree\PreOrderTraversal.cs" />
+    <Compile Include="BST\SortedArrayToBinarySearchTree.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="BinaryTree\TreeUtilities.cs" />
     <Compile Include="BST\BinarySearchTree.cs" />
@@ -195,15 +200,13 @@
     <Compile Include="Graphs\BFS.cs" />
     <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
     <Compile Include="BinaryTree\InOrderTraversal.cs" />
+    <Compile Include="Utils\PrintUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tests\Graphs\" />
-    <Folder Include="Graphs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
