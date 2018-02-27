@@ -92,9 +92,11 @@
     <Compile Include="Hashing\SingleNumber.cs" />
     <Compile Include="Hashing\ValidAnagram.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
+    <Compile Include="Heap\MedianFinder.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
     <Compile Include="Heap\MergeKSortedLists.cs" />
     <Compile Include="Heap\MyHeap.cs" />
+    <Compile Include="Heap\SlidingWindowMaximum.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
     <Compile Include="Leetcode\ArrayRotation.cs" />
     <Compile Include="Leetcode\CountAndSayClass.cs" />
@@ -157,7 +159,9 @@
     <Compile Include="Tests\Hashing\KMostFrequentlyTest.cs" />
     <Compile Include="Tests\Hashing\SingleNumberTest.cs" />
     <Compile Include="Tests\Hashing\ValidAnagramTest.cs" />
+    <Compile Include="Tests\Heap\MedianFinderTest.cs" />
     <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
+    <Compile Include="Tests\Heap\SlidingWindowMaximumTest.cs" />
     <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
     <Compile Include="Tests\LinkedListTests\AddTwoNumbersTest.cs" />
     <Compile Include="Tests\LinkedListTests\DeleteMafterEveryNTest.cs" />

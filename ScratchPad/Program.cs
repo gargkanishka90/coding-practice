@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ScratchPad.Heap;
 using ScratchPad.Leetcode;
+using ScratchPad.Tests.Heap;
 
 namespace ScratchPadTests
 {
@@ -32,7 +33,9 @@ namespace ScratchPadTests
             };
             var dict = new [] { "oath", "pea", "eat", "rain" };
            // var f = new WordSearch2().FindWords(new char[,] { {'a'} }, new []{"a"});
-           MergeKSortedArraysTest.Run();
+           //MergeKSortedArraysTest.Run();
+           //MedianFinderTest.Run();
+           SlidingWindowMaximumTest.Run();
         }
     }
 }
