@@ -27,11 +27,11 @@ namespace ScratchPad.BinaryTree
 
             if (root.left != null)
             {
-                LevelOrderUtil(root.left, level + 1, res);
+                Helper(root.left, level + 1, res);
             }
             if (root.right != null)
             {
-                LevelOrderUtil(root.right, level + 1, res);
+                Helper(root.right, level + 1, res);
             }
             return;
         }
