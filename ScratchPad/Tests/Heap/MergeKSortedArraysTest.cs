@@ -53,6 +53,11 @@ namespace ScratchPad.Heap
             sortedLists[2] = head3;
 
             var result2 = new MergeKSortedLists().MergeKLists(sortedLists);
+
+            while(result2.next != null){
+                Console.WriteLine(result2.val);
+                result2 = result2.next;
+            }
         }
     }
 }
