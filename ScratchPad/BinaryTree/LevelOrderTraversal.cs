@@ -9,14 +9,14 @@ namespace ScratchPad.BinaryTree
 {
     public static class LevelOrderTraversal
     {
-        public static IList<IList<int>> LevelOrderTraveral(TreeNode root)
+        public static IList<IList<int>> LevelOrderTraveralRecursive(TreeNode root)
         {
             var res = new List<IList<int>>();
-            LevelOrderUtil(root, 0, res);
+            Helper(root, 0, res);
             return res;
         }
 
-        private static void LevelOrderUtil(TreeNode root, int level, IList<IList<int>> res)
+        private static void Helper(TreeNode root, int level, IList<IList<int>> res)
         {
             if (root == null) return;
 
@@ -36,7 +36,7 @@ namespace ScratchPad.BinaryTree
             return;
         }
 
-        public static void LevelOrderTraveral2(TreeNode root)
+        public static void LevelOrderTraversalIterative1(TreeNode root)
         {
             var height = TreeUtils.Height(root);
             for (var level = 0; level < height; level++)
@@ -56,7 +56,7 @@ namespace ScratchPad.BinaryTree
             PrintGivenLevel(root.right, level - 1);
         }
 
-        public static void LeverOrderTraversal2(TreeNode root)
+        public static void LevelOrderTraversalIterative2(TreeNode root)
         {
             if (root == null) return;
 

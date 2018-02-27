@@ -35,7 +35,7 @@ namespace ScratchPad
         public static void LevelOrderTest()
         {
             var root = TreeUtils.CreateRandomTree();
-            LevelOrderTraversal.LeverOrderTraversal2(root);
+            LevelOrderTraversal.LevelOrderTraversalIterative2(root);
         }
 
         [Test]
