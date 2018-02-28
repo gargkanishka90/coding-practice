@@ -128,5 +128,11 @@ namespace ScratchPad
             Assert.AreEqual(false, BinaryTreeSame.IsSameTreeIterative(root3, root4));
             Assert.AreEqual(false, BinaryTreeSame.IsSameTreeRecursive(root3, root4));
         }
+
+        [Test]
+        public static void BuildTreeFromPreOrderInOrderTest(){
+            var root = BinaryTreeConstruction.BuildTreeFromPreOrderInOrder(new []{3,9,20,15,7}, new []{9, 3, 15, 20, 7});
+            TreeUtils.PrintTree(root);
+        }
     }
 }

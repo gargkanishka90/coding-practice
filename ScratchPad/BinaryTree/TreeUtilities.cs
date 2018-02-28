@@ -37,11 +37,11 @@ namespace ScratchPad.BinaryTree
         {
             if (root == null)
             {
-                Console.Write("There are no elements in the tree.");
+                Console.Write(" null ");
                 return;
             }
 
-            Console.WriteLine(root.data);
+            Console.Write(root.data + " ");
 
             PrintTree(root.left);
             PrintTree(root.right);

@@ -202,6 +202,7 @@
     <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
     <Compile Include="BinaryTree\InOrderTraversal.cs" />
     <Compile Include="Utils\PrintUtils.cs" />
+    <Compile Include="BinaryTree\BinaryTreeConstruction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
