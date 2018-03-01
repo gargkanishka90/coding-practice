@@ -203,6 +203,7 @@
     <Compile Include="BinaryTree\InOrderTraversal.cs" />
     <Compile Include="Utils\PrintUtils.cs" />
     <Compile Include="BinaryTree\BinaryTreeConstruction.cs" />
+    <Compile Include="BinaryTree\FlattenTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
