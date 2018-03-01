@@ -37,9 +37,10 @@ namespace ScratchPad
         public static void LevelOrderTest()
         {
             var root = SortedArrayToBinarySearchTree.SortedArrayToBST(new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15});
-            LevelOrderTraversal.LevelOrderTraversalIterative1(root);
+            //LevelOrderTraversal.LevelOrderTraversalIterative1(root);
             Console.WriteLine();
-            LevelOrderTraversal.LevelOrderTraversalIterative3(root);
+            //LevelOrderTraversal.LevelOrderTraversalIterative3(root);
+            LevelOrderTraversal.LevelOrderBottom(root);
         }
 
         [Test]
@@ -130,9 +131,9 @@ namespace ScratchPad
         }
 
         [Test]
-        public static void BuildTreeFromPreOrderInOrderTest(){
-            var root = BinaryTreeConstruction.BuildTreeFromPreOrderInOrder(new []{3,9,20,15,7}, new []{9, 3, 15, 20, 7});
-            TreeUtils.PrintTree(root);
+        public static void IsBinaryTreeBalanced(){
+            var root = TreeUtils.CreateRandomTree();
+            Console.WriteLine(TreeUtils.IsBalanced(root));
         }
     }
 }

@@ -108,5 +108,119 @@ namespace ScratchPad.BinaryTree
                 Console.WriteLine();
             }
         }
+
+        public class NodeWithLevel
+        {
+            public TreeNode node { get; set; }
+            public int level { get; set; }
+
+            public NodeWithLevel(int level, TreeNode n)
+            {
+                level = level;
+                node = n;
+            }
+        }
+
+        public static IList<IList<int>> LevelOrderBottom(TreeNode root)
+        {
+            var result = new List<IList<int>>();
+            Helper(root, result);
+            return result;
+        }
+
+        private static void Helper(TreeNode root, List<IList<int>> result)
+        {
+            if (root == null)
+            {
+                result.Add(new List<int>());
+                return;
+            }
+            else
+            {
+                var dict = new Dictionary<int, List<int>>();
+                var queue = new Queue<NodeWithLevel>();
+                var start = new NodeWithLevel(1, root);
+                queue.Enqueue(start);
+
+                while (queue.Count > 0)
+                {
+                    var temp = queue.Dequeue();
+                    if (dict.ContainsKey(temp.level))
+                    {
+                        dict[temp.level].Add(temp.node.data);
+                    }
+                    else
+                    {
+                        dict[temp.level] = new List<int>() { temp.node.data };
+                    }
+
+                    if (temp.node.left != null)
+                    {
+                        queue.Enqueue(new NodeWithLevel(temp.level + 1, temp.node.left));
+                    }
+
+                    if (temp.node.right != null)
+                    {
+                        queue.Enqueue(new NodeWithLevel(temp.level + 1, temp.node.right));
+                    }
+                }
+
+                var maxLevel = dict.Keys.Max();
+                for (var lev = maxLevel; lev >= 1; lev--)
+                {
+                    result.Add(new List<int>());
+                    ((List<int>)result[result.Count - 1]).AddRange(dict[lev]);
+                }
+            }
+        }
+
+        public static IList<double> AverageOfLevels(TreeNode root)
+        {
+            var result = new List<double>();
+            if (root == null)
+                return result;
+            Helper(root, result);
+            return result;
+        }
+
+        private static void Helper(TreeNode root, IList<double> result){
+                var dict = new Dictionary<int, List<int>>();
+                var queue = new Queue<NodeWithLevel>();
+                var start = new NodeWithLevel(1, root);
+                
+                queue.Enqueue(start);
+
+                while (queue.Count > 0)
+                {
+                    var temp = queue.Dequeue();
+                    if (dict.ContainsKey(temp.level))
+                    {
+                        dict[temp.level].Add(temp.node.data);
+                    }
+                    else
+                    {
+                        dict[temp.level] = new List<int>() { temp.node.data };
+                    }
+
+                    if (temp.node.left != null)
+                    {
+                        queue.Enqueue(new NodeWithLevel(temp.level + 1, temp.node.left));
+                    }
+
+                    if (temp.node.right != null)
+                    {
+                        queue.Enqueue(new NodeWithLevel(temp.level + 1, temp.node.right));
+                    }
+                }
+
+                var maxLevel = dict.Keys.Max();
+                
+                for (var lev = 1; lev <= maxLevel; lev++)
+                {
+                    var nodes = dict[lev];
+                    var avg = nodes.Sum() / nodes.Count();
+                    result.Add(avg);
+                }
+            }
+        }
     }
-}

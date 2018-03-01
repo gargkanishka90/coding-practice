@@ -46,5 +46,15 @@ namespace ScratchPad.BinaryTree
             PrintTree(root.left);
             PrintTree(root.right);
         }
+
+        public static bool IsBalanced(TreeNode root){
+            if (root == null)
+                return true;
+
+            var leftHeight = Height(root.left);
+            var rightHeight = Height(root.right);
+
+            return Math.Abs(leftHeight - rightHeight) <= 1 && IsBalanced(root.left) && IsBalanced(root.right);
+        }
     }
 }
