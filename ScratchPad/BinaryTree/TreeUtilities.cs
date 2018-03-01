@@ -47,6 +47,8 @@ namespace ScratchPad.BinaryTree
             PrintTree(root.right);
         }
 
+        // This is the brute-force approach. Height() is called at every node starting from root.
+        // Height() takes O(N) time and there are N nodes. So Time complexity is O(N^2)
         public static bool IsBalanced(TreeNode root){
             if (root == null)
                 return true;
@@ -55,6 +57,29 @@ namespace ScratchPad.BinaryTree
             var rightHeight = Height(root.right);
 
             return Math.Abs(leftHeight - rightHeight) <= 1 && IsBalanced(root.left) && IsBalanced(root.right);
+        }
+
+
+        // This is an optimized version to check if a binary tree is balanced.
+        // Worst-Case Occurs when a left-subtree is completely balanced and we are at root node
+        // Hence, Time Complexity is O(Height of tree) - O(N)
+        public static bool IsBalancedOptimized(TreeNode root){
+            return DfsHeight(root) != -1;
+        }
+
+        public static int DfsHeight(TreeNode root){
+            if (root == null)
+                return 0;
+
+            var left = DfsHeight(root.left);
+            if (left == -1) return -1;
+
+            var right = DfsHeight(root.right);
+            if (right == -1) return -1;
+
+            if (Math.Abs(left - right) > 1) return -1;
+
+            return Math.Max(left, right) + 1;
         }
     }
 }
