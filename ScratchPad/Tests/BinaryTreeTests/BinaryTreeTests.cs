@@ -38,9 +38,10 @@ namespace ScratchPad
         public static void LevelOrderTest()
         {
             var root = SortedArrayToBinarySearchTree.SortedArrayToBST(new[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15});
-            LevelOrderTraversal.LevelOrderTraversalIterative1(root);
+            //LevelOrderTraversal.LevelOrderTraversalIterative1(root);
             Console.WriteLine();
-            LevelOrderTraversal.LevelOrderTraversalIterative3(root);
+            //LevelOrderTraversal.LevelOrderTraversalIterative3(root);
+            LevelOrderTraversal.LevelOrderBottom(root);
         }
 
         [Test]
@@ -144,6 +145,25 @@ namespace ScratchPad
             var root4 = SortedArrayToBinarySearchTree.SortedArrayToBST(new[] { 1, 3, 2 });
             Assert.AreEqual(false, BinaryTreeSame.IsSameTreeIterative(root3, root4));
             Assert.AreEqual(false, BinaryTreeSame.IsSameTreeRecursive(root3, root4));
+        }
+
+        [Test]
+        public static void IsBinaryTreeBalanced(){
+            var root = TreeUtils.CreateRandomTree();
+            Console.WriteLine(TreeUtils.IsBalanced(root));
+        }
+
+        [Test]
+        public static void InvertBinaryTreeTest()
+        {
+            var root = TreeUtils.CreateRandomTree();
+            TreeUtils.PrintTree(root);
+            Console.WriteLine();
+            root = InvertBinaryTree.InvertTree(root);
+            //Assert.AreEqual(root.left.data, inverted.right.data);
+            //Assert.AreEqual(root.right.data, inverted.left.data);
+
+            TreeUtils.PrintTree(root);
         }
     }
 }

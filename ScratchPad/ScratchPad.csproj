@@ -204,6 +204,9 @@
     <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
     <Compile Include="BinaryTree\InOrderTraversal.cs" />
     <Compile Include="Utils\PrintUtils.cs" />
+    <Compile Include="BinaryTree\BinaryTreeConstruction.cs" />
+    <Compile Include="BinaryTree\FlattenTree.cs" />
+    <Compile Include="BinaryTree\InvertBinaryTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
