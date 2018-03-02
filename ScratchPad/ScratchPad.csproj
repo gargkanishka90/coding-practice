@@ -66,6 +66,7 @@
     <Compile Include="Arrays\WordSearch.cs" />
     <Compile Include="Backtracking\Powerset.cs" />
     <Compile Include="Backtracking\Subset.cs" />
+    <Compile Include="BinaryTree\BinaryTreeBoundary.cs" />
     <Compile Include="BinaryTree\BinaryTreeComputeLeaves.cs" />
     <Compile Include="BinaryTree\BinaryTreeLca.cs" />
     <Compile Include="BinaryTree\BinaryTreePathSum.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="BinaryTree\LevelOrderTraversal.cs" />
     <Compile Include="BinaryTree\PostOrderTraversal.cs" />
     <Compile Include="BinaryTree\PreOrderTraversal.cs" />
+    <Compile Include="BST\BSTSerialization.cs" />
     <Compile Include="BST\SortedArrayToBinarySearchTree.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="BinaryTree\TreeUtilities.cs" />

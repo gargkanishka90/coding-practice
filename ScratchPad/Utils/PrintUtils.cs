@@ -10,10 +10,12 @@ namespace ScratchPad.Utils
     {
         public static void PrintList<T>(IEnumerable<T> iterable)
         {
-            foreach (var item in iterable)
+            var list = iterable.ToList();
+            for (var i = 0; i < list.Count-1; i++)
             {
-                Console.Write(item + " , ");
+                Console.Write(list[i] + " , ");
             }
+            Console.Write(list[list.Count-1]);
         }
     }
 }

@@ -104,6 +104,12 @@ namespace ScratchPad.Tests.BST
             
         }
 
+        [Test]
+        public static void DeserializeBST()
+        {
+            var res = BSTSerialization.DeserializeBST(new[] {10, 5, 1, 7, 40, 50});
+        }
+
         
     }
 }
