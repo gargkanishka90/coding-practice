@@ -135,5 +135,18 @@ namespace ScratchPad
             var root = TreeUtils.CreateRandomTree();
             Console.WriteLine(TreeUtils.IsBalanced(root));
         }
+
+        [Test]
+        public static void InvertBinaryTreeTest()
+        {
+            var root = TreeUtils.CreateRandomTree();
+            TreeUtils.PrintTree(root);
+            Console.WriteLine();
+            root = InvertBinaryTree.InvertTree(root);
+            //Assert.AreEqual(root.left.data, inverted.right.data);
+            //Assert.AreEqual(root.right.data, inverted.left.data);
+
+            TreeUtils.PrintTree(root);
+        }
     }
 }
