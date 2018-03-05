@@ -165,5 +165,13 @@ namespace ScratchPad
 
             TreeUtils.PrintTree(root);
         }
+
+        [Test]
+        public static void FindLcaTest()
+        {
+            var root = TreeUtils.CreateSampleTreeWithLinkToParents();
+            Console.WriteLine($"16 and 810 is " + BinaryTreeLca.FindLcaWithParentLinks(root, root.left.left, root.right.right));
+            Console.WriteLine($"16 and 58 is " + BinaryTreeLca.FindLcaWithParentLinks(root, root.left.left, root.left.right));
+        }
     }
 }

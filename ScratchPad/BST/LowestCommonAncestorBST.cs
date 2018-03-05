@@ -8,6 +8,10 @@ namespace ScratchPad.BST
 {
     public class LowestCommonAncestorBST
     {
+        // Important thing to remember is to use the fact that this tree is a BST. 
+        // i.e. there is some ordering in the nodes. Use this fact to try to locate the 
+        // position of the two given nodes w.r.t. the root.
+
         public static int FindLca(BSTNode root, BSTNode first, BSTNode second)
         {
             if (root == null || first == root || second == root)

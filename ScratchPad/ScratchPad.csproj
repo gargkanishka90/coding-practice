@@ -97,6 +97,8 @@
     <Compile Include="DynamicProgramming\LongestRepeatedSubsequence.cs" />
     <Compile Include="DynamicProgramming\RobotGrid.cs" />
     <Compile Include="DynamicProgramming\StringHelpers.cs" />
+    <Compile Include="Graphs\Edge.cs" />
+    <Compile Include="Graphs\Vertex.cs" />
     <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Hashing\FrequencySort.cs" />

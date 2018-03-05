@@ -24,6 +24,28 @@ namespace ScratchPad.BinaryTree
             return root;
         }
 
+        public static TreeNode CreateSampleTreeWithLinkToParents()
+        {
+            var node1 = new TreeNode(6);
+            var node2 = new TreeNode(8);
+            node2.parent = node1;
+            var node3 = new TreeNode(10);
+            node3.parent = node1;
+            var node4 = new TreeNode(16);
+            node4.parent = node2;
+            var node5 = new TreeNode(58);
+            node5.parent = node2;
+            var node6 = new TreeNode(810);
+            node6.parent = node3;
+
+            node1.left = node2;
+            node1.right = node3;
+            node2.left = node4;
+            node2.right = node5;
+            node3.right = node6;
+            return node1;
+        }
+
         public static TreeNode CreateRandomPerfectTree()
         {
             var r = new Random();

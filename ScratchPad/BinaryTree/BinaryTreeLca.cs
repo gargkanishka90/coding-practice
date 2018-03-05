@@ -32,6 +32,27 @@ namespace ScratchPad.BinaryTree
             return PathP[i - 1].data;
         }
 
+        public static int FindLcaWithParentLinks(TreeNode root, TreeNode p, TreeNode q)
+        {
+            if (root == null || root == p || root == q)
+                return root?.data ?? -1;
+
+            var runner1 = p;
+            var runner2 = q;
+
+            while (runner1 != null && runner2 != null)
+            {
+                if (runner1.parent == runner2.parent)
+                {
+                    return runner2.parent.data;
+                }
+                runner1 = runner1.parent;
+                runner2 = runner2.parent;
+            }
+
+            return -1;
+        }
+
         public static List<TreeNode> FindPath(TreeNode root, int k)
         {
             var result = new List<TreeNode>();
