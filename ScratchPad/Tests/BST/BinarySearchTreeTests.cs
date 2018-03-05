@@ -85,11 +85,26 @@ namespace ScratchPad.Tests.BST
         public static void LcaTest()
         {
             var tr = PreOrderToBST.Construct(new[] { 10, 5, 1, 7, 40, 50 });
+            Console.WriteLine("Using Node Paths -");
             Console.WriteLine("7 and 50: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(7), new BSTNode(50)));
             Console.WriteLine("7 and 1: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(7), new BSTNode(1)));
             Console.WriteLine("1 and 10: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(1), new BSTNode(10)));
             Console.WriteLine("7 and 40: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(7), new BSTNode(40)));
             Console.WriteLine("50 and 40: " + LowestCommonAncestorBST.FindLca(tr._root, new BSTNode(50), new BSTNode(40)));
+            Console.WriteLine();
+            Console.WriteLine("Using Recursion - ");
+            Console.WriteLine("7 and 50: " + LowestCommonAncestorBST.FindLcaUsingRecursion(tr._root, new BSTNode(7), new BSTNode(50)));
+            Console.WriteLine("7 and 1: " + LowestCommonAncestorBST.FindLcaUsingRecursion(tr._root, new BSTNode(7), new BSTNode(1)));
+            Console.WriteLine("1 and 10: " + LowestCommonAncestorBST.FindLcaUsingRecursion(tr._root, new BSTNode(1), new BSTNode(10)));
+            Console.WriteLine("7 and 40: " + LowestCommonAncestorBST.FindLcaUsingRecursion(tr._root, new BSTNode(7), new BSTNode(40)));
+            Console.WriteLine("50 and 40: " + LowestCommonAncestorBST.FindLcaUsingRecursion(tr._root, new BSTNode(50), new BSTNode(40)));
+            Console.WriteLine();
+            Console.WriteLine("Using Iteration - ");
+            Console.WriteLine("7 and 50: " + LowestCommonAncestorBST.FindLcaUsingIteration(tr._root, new BSTNode(7), new BSTNode(50)));
+            Console.WriteLine("7 and 1: " + LowestCommonAncestorBST.FindLcaUsingIteration(tr._root, new BSTNode(7), new BSTNode(1)));
+            Console.WriteLine("1 and 10: " + LowestCommonAncestorBST.FindLcaUsingIteration(tr._root, new BSTNode(1), new BSTNode(10)));
+            Console.WriteLine("7 and 40: " + LowestCommonAncestorBST.FindLcaUsingIteration(tr._root, new BSTNode(7), new BSTNode(40)));
+            Console.WriteLine("50 and 40: " + LowestCommonAncestorBST.FindLcaUsingIteration(tr._root, new BSTNode(50), new BSTNode(40)));
         }
 
         [Test]

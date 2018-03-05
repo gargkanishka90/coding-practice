@@ -25,5 +25,49 @@ namespace ScratchPad.BST
 
             return firstPath[i-1];
         }
+
+        public static int FindLcaUsingRecursion(BSTNode root, BSTNode first, BSTNode second)
+        {
+            if (root == null)
+                return -1;
+
+            if (first.data < root.data && second.data < root.data)
+            {
+                return FindLcaUsingRecursion(root.left, first, second);
+            }
+
+            if (first.data > root.data && second.data > root.data)
+            {
+                return FindLcaUsingRecursion(root.right, first, second);
+            }
+
+            return root.data;
+        }
+
+        public static int FindLcaUsingIteration(BSTNode root, BSTNode first, BSTNode second)
+        {
+            if (root == null)
+                return -1;
+
+            while (root != null)
+            {
+                if (first.data < root.data && second.data < root.data)
+                {
+                    root = root.left;
+                }
+
+                else if (first.data > root.data && second.data > root.data)
+                {
+                    root = root.right;
+                }
+
+                else
+                {
+                    break;
+                }
+            }
+
+            return root?.data ?? -1;
+        }
     }
 }

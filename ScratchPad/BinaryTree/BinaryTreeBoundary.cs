@@ -9,6 +9,10 @@ namespace ScratchPad.BinaryTree
 {
     public static class BinaryTreeBoundary
     {
+        // We could divide the tree into two subtrees. One is the left subtree, and the other is the right subtree. 
+        // For the left subtree, we print the leftmost edges from top to bottom. 
+        // Then we print its leaves from left to right. 
+        // For the right subtree, we print its leaves from left to right, then its rightmost edges from bottom to top.
         public static List<int> PrintBoundary(TreeNode root)
         {
             var result = new List<int>();
