@@ -202,13 +202,14 @@
     <Compile Include="Trie\TrieNode.cs" />
     <Compile Include="Graphs\Graph.cs" />
     <Compile Include="Tests\Graphs\GraphTests.cs" />
-    <Compile Include="Graphs\BFS.cs" />
+    <Compile Include="Graphs\Search.cs" />
     <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
     <Compile Include="BinaryTree\InOrderTraversal.cs" />
     <Compile Include="Utils\PrintUtils.cs" />
     <Compile Include="BinaryTree\BinaryTreeConstruction.cs" />
     <Compile Include="BinaryTree\FlattenTree.cs" />
     <Compile Include="BinaryTree\InvertBinaryTree.cs" />
+    <Compile Include="Graphs\GraphUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

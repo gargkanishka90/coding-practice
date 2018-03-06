@@ -10,31 +10,21 @@ namespace ScratchPad.Tests.Graphs
     {
         [Test]
         public void CreateGraphTest(){
-			Graph g = new Graph(4);
-
-			g.AddEdge(0, 1);
-			g.AddEdge(0, 2);
-			g.AddEdge(1, 2);
-			g.AddEdge(2, 0);
-			g.AddEdge(2, 3);
-			g.AddEdge(3, 3);
-
-            Assert.AreEqual(new List<int>{1,2}, g.AdjacencyList[0]);
+            var g = GraphUtils.GenerateSampleUndirectedGraph();
+            GraphUtils.PrintSampleGraph(g);
+            Console.WriteLine("--------------------------------");
+            var dg = GraphUtils.GenerateSampleDirectedGraph();
+            GraphUtils.PrintSampleGraph(dg);
+            Console.WriteLine(Search.BFS(dg, 1, 5));
+            Console.WriteLine(Search.BFS(dg, 3, 0));
         }
 
         [Test]
         public void BFSTest(){
-			Graph g = new Graph(4);
-
-			g.AddEdge(0, 1);
-			g.AddEdge(0, 2);
-			g.AddEdge(1, 2);
-			g.AddEdge(2, 0);
-			g.AddEdge(2, 3);
-			g.AddEdge(3, 3);
-
-            var bfs = BFS.Search(g, 2);
-            Assert.AreEqual(new List<int>(){2,0,3,1}, bfs);
+            var g = GraphUtils.GenerateSampleUndirectedGraph();
+            GraphUtils.PrintSampleGraph(g);
+            var bfs = Search.BFS(g, 2);
+            Assert.AreEqual(new List<int>{2,1,3,0,4}, bfs);
         }
     }
 }

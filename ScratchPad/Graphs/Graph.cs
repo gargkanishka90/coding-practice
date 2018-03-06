@@ -9,11 +9,13 @@ namespace ScratchPad.Graphs
 
         public int VertexCount { get; set; }
         public List<int>[] AdjacencyList { get; set; }
+        public bool directed { get; set; }
 
-        public Graph(int vertexCount)
+        public Graph(int vertexCount, bool directed = false)
         {
             this.VertexCount = vertexCount;
             AdjacencyList = new List<int>[vertexCount];
+            this.directed = directed;
             for (var i = 0; i < AdjacencyList.Length; i++)
             {
                 AdjacencyList[i] = new List<int>();
@@ -22,6 +24,9 @@ namespace ScratchPad.Graphs
 
         public void AddEdge(int from, int to){
             AdjacencyList[from].Add(to);
+            if(!directed){
+                AdjacencyList[to].Add(from);
+            }
         }
 
         public bool IsAnEdge(int from, int to){
