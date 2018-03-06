@@ -19,6 +19,35 @@ namespace ScratchPad.BST
             return tree;
         }
 
+        public static BSTNode CreateSampleBSTWithLinkToParents()
+        {
+            var node20 = new BSTNode(20);
+            var node8 = new BSTNode(8);
+            var node22 = new BSTNode(22);
+            var node4 = new BSTNode(4);
+            var node12 = new BSTNode(12);
+            var node10 = new BSTNode(10);
+            var node14 = new BSTNode(14);
+            node20.left = node8;
+            node20.right = node22;
+
+            node8.left = node4;
+            node8.right = node12;
+            node8.parent = node20;
+
+            node22.parent = node20;
+            node4.parent = node8;
+
+            node12.parent = node8;
+            node12.left = node10;
+            node12.right = node14;
+
+            node10.parent = node12;
+            node14.parent = node12;
+
+            return node20;
+        }
+
         public static BSTNode Search(BSTNode root, int key)
         {
             if (root == null || root.data == key)

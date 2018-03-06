@@ -8,7 +8,7 @@ namespace ScratchPad.BST
 {
     public class BSTNode
     {
-        public BSTNode left, right;
+        public BSTNode left, right, parent;
         public int data;
 
         public BSTNode()
@@ -17,11 +17,12 @@ namespace ScratchPad.BST
             right = null;
         }
 
-        public BSTNode(int data, BSTNode left = null, BSTNode right = null)
+        public BSTNode(int data, BSTNode left = null, BSTNode right = null, BSTNode parent = null)
         {
             this.data = data;
             this.left = left;
             this.right = right;
+            this.parent = parent;
         }
 
         public static List<BSTNode> GetChildren(BSTNode root)
