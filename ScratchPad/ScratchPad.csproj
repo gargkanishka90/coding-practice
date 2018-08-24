@@ -76,6 +76,7 @@
     <Compile Include="BinaryTree\PostOrderTraversal.cs" />
     <Compile Include="BinaryTree\PreOrderTraversal.cs" />
     <Compile Include="BST\BSTSerialization.cs" />
+    <Compile Include="BST\BSTSuccessor.cs" />
     <Compile Include="BST\SortedArrayToBinarySearchTree.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
     <Compile Include="BinaryTree\TreeUtilities.cs" />
@@ -168,6 +169,7 @@
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
     <Compile Include="Tests\BST\BinarySearchTreeTests.cs" />
+    <Compile Include="Tests\BST\BSTSuccessorTests.cs" />
     <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
     <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
