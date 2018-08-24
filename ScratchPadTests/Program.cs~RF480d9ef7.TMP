@@ -1,0 +1,73 @@
+﻿using System.Collections.Generic;
+using PracticePad.Leetcode;
+using ScratchPad.Arrays;
+using ScratchPad.BinaryTree;
+using ScratchPad.BinaryTreeTests;
+using ScratchPad.DesignPatterns;
+using ScratchPad.DesignPatterns.TemplateMethod;
+using ScratchPad.Heap;
+using ScratchPad.Leetcode;
+using ScratchPad.LRUCache;
+using ScratchPad.Searching;
+using ScratchPad.Sorting;
+using ScratchPadTests;
+using ScratchPadTests.BinaryTree;
+using ScratchPadTests.Heap;
+
+namespace ScratchPad
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //ReverseSLLTest.Run();
+            //RemoveDupsTest.Run();
+            //TrieTest.Run();
+            //UniqueCharactersTest.Run();
+            // ReverseSubListTests.Run();
+            //GenerateAllPermutationsTest.Run();
+            //ArrayPairSumTests.Run();
+            //MaxContiguousSubArrayTests.Run();
+            // MissingElementTests.Run();
+            //ReplaceCharsTest.Run();
+            //InsertCharsTest.Run();
+            //SplitLinkedListTests.Run();
+            //LinkedListCycleTests.Run();
+           // DeleteMafterEveryNTest.Run();
+           //FindFirstUniqueCharacterTest.Run();
+           //MatrixZeroTests.Run();
+           //PreOrderTest.Run();
+           //LRUCacheTests.Run();
+           //InvertedIndexTests.Run();
+           //TwoSumTest.Run();
+           //AddTwoNumbersTest.Run();
+           //MergeKSortedArraysTest.Run();
+           //BubbleSortTest.Run();
+           //StrategyPatternWiki.Run();
+           //TemplateMethodPattern.Run();
+            //NumberOfOneBits.HammingWeight(11);
+            //BitManipulationClass.HammingDistance(4, 2);
+           // BitManipulationClass.reverseBits(43261596);
+           //ArrayRotation.Rotate(new []{1,2,3,4,5,6,7}, 3);
+
+            var mat = new int[,]
+            {
+                {15, 13, 2, 5},
+                {14, 3, 4, 1},
+                {12, 6, 8, 9},
+                {16, 7, 10, 11}
+            };
+            //ArrayRotation.Rotate(mat);
+           var tr = TreeHelpers.CreateRandomTree();
+           // var res = TreeHelpers.LevelOrder(tr);
+           //TraversalHelpers.InOrderTraversal(tr);
+           //TraversalHelpers.PostOrderTraversal(tr);
+            //var height = TreeHelpers.Height(tr);
+            //TraversalHelpers.LevelOrderTraveral2(tr);
+
+            //var tr = TreeUtilities.SortedArrayToBST(new[] {1, 2, 3, 4, 5, 6});
+            var path = TraversalHelpers.PostOrderIterative(tr);
+            var pathRec = TraversalHelpers.PostOrderTraversal(tr);
+        }
+    }
+}

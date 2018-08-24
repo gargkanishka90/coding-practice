@@ -1,5 +1,4 @@
 ﻿using System;
-using ScratchPad;
 
 namespace ScratchPadTests
 {
@@ -7,7 +6,7 @@ namespace ScratchPadTests
     {
         public static void Run()
         {
-            var trie = new Trie();
+            var trie = new ScratchPad.Trie.MyTrie();
             string[] words = { "ken", "kani", "kanishka", "ken", "crazy", "ken" };
             for (int i = 0; i < words.Length; i++)
             {
@@ -16,11 +15,11 @@ namespace ScratchPadTests
             Console.WriteLine(trie.HasWord("kanishka"));
             Console.WriteLine(trie.HasWord("kanishk"));
             //Console.WriteLine(trie.WordCount("ken"));
-            var positions = trie.WordPositions("ken");
-            foreach (var a in positions)
-            {
-                Console.WriteLine(a);
-            }
+            //var positions = trie.WordPositions("ken");
+            //foreach (var a in positions)
+            //{
+              //  Console.WriteLine(a);
+            //}
         }
     }
 }

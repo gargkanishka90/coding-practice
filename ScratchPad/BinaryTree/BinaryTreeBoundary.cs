@@ -39,7 +39,8 @@ namespace ScratchPad.BinaryTree
                 runner1 = runner1.left;
             }
 
-            var leftLeaves = BinaryTreeLeaves.ComputeLeaves(left).Skip(1);
+            //var leftLeaves = BinaryTreeLeaves.ComputeLeaves(left).Skip(1);
+            var leftLeaves = BinaryTreeComputeLeaves.ComputeLeaves(left).Skip(1);
             result.AddRange(leftLeaves);
 
             var runner2 = root;
@@ -50,7 +51,9 @@ namespace ScratchPad.BinaryTree
                 runner2 = runner2.right;
             }
 
-            var rightLeaves = BinaryTreeLeaves.ComputeLeaves(right);
+            //var rightLeaves = BinaryTreeLeaves.ComputeLeaves(right);
+
+            var rightLeaves = BinaryTreeComputeLeaves.ComputeLeaves(right);
             result.AddRange(rightLeaves);
 
             while (rightStack.Count > 1)

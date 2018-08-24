@@ -16,6 +16,11 @@ namespace ScratchPad.BST
         }
 
         private static TreeNode SortedArrayToBstHelper(int[] nums, int start, int end)
+        { 
+            return SortedArrayToBSTHelper(nums, 0, nums.Length - 1);
+        }
+
+        private static TreeNode SortedArrayToBSTHelper(int[] nums, int start, int end)
         {
             if (start > end)
             {

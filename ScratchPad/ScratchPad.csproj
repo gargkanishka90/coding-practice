@@ -14,7 +14,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>anycpu</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -31,6 +31,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <StartAction>Project</StartAction>
+    <ExternalConsole>true</ExternalConsole>
+    <ConsolePause>true</ConsolePause>
+    <TargetRuntimeId>Mono 5.2.0.215</TargetRuntimeId>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -51,22 +57,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonProblem.cs" />
     <Compile Include="Arrays\ArrayPairSum.cs" />
+    <Compile Include="Arrays\ArrayShuffle.cs" />
     <Compile Include="Arrays\MatrixZero.cs" />
     <Compile Include="Arrays\MaxContiguousSubArray.cs" />
     <Compile Include="Arrays\MissingElement.cs" />
-    <Compile Include="BinaryTree\TreeTraveral.cs" />
-    <Compile Include="BinaryTree\TreeHelpers.cs" />
+    <Compile Include="Arrays\WordSearch.cs" />
+    <Compile Include="Backtracking\Powerset.cs" />
+    <Compile Include="Backtracking\Subset.cs" />
+    <Compile Include="BinaryTree\BinaryTreeBoundary.cs" />
+    <Compile Include="BinaryTree\BinaryTreeComputeLeaves.cs" />
+    <Compile Include="BinaryTree\BinaryTreeLca.cs" />
+    <Compile Include="BinaryTree\BinaryTreePathSum.cs" />
+    <Compile Include="BinaryTree\BinaryTreeSame.cs" />
+    <Compile Include="BinaryTree\BinaryTreeSymmetric.cs" />
+    <Compile Include="BinaryTree\LevelOrderTraversal.cs" />
+    <Compile Include="BinaryTree\PostOrderTraversal.cs" />
+    <Compile Include="BinaryTree\PreOrderTraversal.cs" />
+    <Compile Include="BST\BSTSerialization.cs" />
+    <Compile Include="BST\BSTSuccessor.cs" />
+    <Compile Include="BST\SortedArrayToBinarySearchTree.cs" />
     <Compile Include="BinaryTree\TreeNode.cs" />
+    <Compile Include="BinaryTree\TreeUtilities.cs" />
+    <Compile Include="BST\BinarySearchTree.cs" />
+    <Compile Include="BST\BSTNode.cs" />
+    <Compile Include="BST\BSTUtilities.cs" />
+    <Compile Include="BST\FloorAndCeilBST.cs" />
+    <Compile Include="BST\LowestCommonAncestorBST.cs" />
+    <Compile Include="BST\PreOrderToBST.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
+    <Compile Include="DesignPatterns\Strategy\StrategyPattern.cs" />
+    <Compile Include="DesignPatterns\Strategy\Customer.cs" />
+    <Compile Include="DesignPatterns\Strategy\IBillingStrategy.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\FedExOrderShipment.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\OrderShipment.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\TemplateMethodPattern.cs" />
+    <Compile Include="DesignPatterns\TemplateMethod\UpsOrderShipment.cs" />
+    <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
+    <Compile Include="DynamicProgramming\LongestRepeatedSubsequence.cs" />
+    <Compile Include="DynamicProgramming\RobotGrid.cs" />
+    <Compile Include="DynamicProgramming\StringHelpers.cs" />
+    <Compile Include="Graphs\Edge.cs" />
+    <Compile Include="Graphs\Vertex.cs" />
+    <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
+    <Compile Include="Hashing\FrequencySort.cs" />
+    <Compile Include="Hashing\GroupAnagrams.cs" />
+    <Compile Include="Hashing\KMostFrequently.cs" />
+    <Compile Include="Hashing\PalindromicString.cs" />
+    <Compile Include="Hashing\SingleNumber.cs" />
+    <Compile Include="Hashing\ValidAnagram.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
+    <Compile Include="Heap\MedianFinder.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
+    <Compile Include="Heap\MergeKSortedLists.cs" />
     <Compile Include="Heap\MyHeap.cs" />
+    <Compile Include="Heap\SlidingWindowMaximum.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
     <Compile Include="Leetcode\FindAllDisappearedNumbers.cs" />
+    <Compile Include="Leetcode\ArrayRotation.cs" />
+    <Compile Include="Leetcode\CountAndSayClass.cs" />
+    <Compile Include="Leetcode\DecodeWays.cs" />
+    <Compile Include="Leetcode\IntersectClass.cs" />
+    <Compile Include="Leetcode\LIS.cs" />
+    <Compile Include="Leetcode\Match.cs" />
+    <Compile Include="Leetcode\MinStack.cs" />
+    <Compile Include="Leetcode\MissingClass.cs" />
+    <Compile Include="Leetcode\MoveZerosClass.cs" />
+    <Compile Include="Leetcode\BitManipulationClass.cs" />
+    <Compile Include="Leetcode\NormalizePath.cs" />
+    <Compile Include="Leetcode\PhoneNumberLetterCombination.cs" />
+    <Compile Include="Leetcode\PlusOne.cs" />
+    <Compile Include="Leetcode\ReverseBits.cs" />
+    <Compile Include="Leetcode\RobotPath.cs" />
+    <Compile Include="Leetcode\Rotate2DArrayClass.cs" />
     <Compile Include="Leetcode\SortColors.cs" />
+    <Compile Include="Leetcode\ThreeSum.cs" />
     <Compile Include="Leetcode\TwoSum.cs" />
+    <Compile Include="Leetcode\ValidParantheses.cs" />
+    <Compile Include="Leetcode\WordBreakProblem.cs" />
+    <Compile Include="Leetcode\WordSearch2.cs" />
     <Compile Include="LinkedList\AddTwoNumbers.cs" />
     <Compile Include="LinkedList\DeleteMnodesAfterEveryNnodes.cs" />
     <Compile Include="LinkedList\LinkedListCycle.cs" />
@@ -77,12 +148,15 @@
     <Compile Include="LinkedList\ReverseSubList.cs" />
     <Compile Include="LinkedList\SplitLinkedList.cs" />
     <Compile Include="LINQtoJSON\PracticeLINQtoJSON.cs" />
+    <Compile Include="LRU\ILRUCache.cs" />
     <Compile Include="LRU\LRUCache.cs" />
     <Compile Include="LRU\LRUCache2.cs" />
     <Compile Include="LRU\LRUCache3.cs" />
+    <Compile Include="LRU\MyLRUCache.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\InvertedIndex.cs" />
+    <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="String\FindFirstUniqueCharacter.cs" />
@@ -95,9 +169,19 @@
     <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
+    <Compile Include="Tests\BST\BinarySearchTreeTests.cs" />
+    <Compile Include="Tests\BST\BSTSuccessorTests.cs" />
+    <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
+    <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
+    <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
+    <Compile Include="Tests\Hashing\KMostFrequentlyTest.cs" />
+    <Compile Include="Tests\Hashing\SingleNumberTest.cs" />
+    <Compile Include="Tests\Hashing\ValidAnagramTest.cs" />
+    <Compile Include="Tests\Heap\MedianFinderTest.cs" />
     <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
     <Compile Include="Tests\Leetcode\FindAllDisappearedNumbersTest.cs" />
+    <Compile Include="Tests\Heap\SlidingWindowMaximumTest.cs" />
     <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
     <Compile Include="Tests\LinkedListTests\AddTwoNumbersTest.cs" />
     <Compile Include="Tests\LinkedListTests\DeleteMafterEveryNTest.cs" />
@@ -106,6 +190,7 @@
     <Compile Include="Tests\LinkedListTests\ReverseSLLTest.cs" />
     <Compile Include="Tests\LinkedListTests\ReverseSubListTests.cs" />
     <Compile Include="Tests\LinkedListTests\SplitLinkedListTests.cs" />
+    <Compile Include="Tests\LongestIncreasingSubsequenceTests.cs" />
     <Compile Include="Tests\LRUCache\LRUCacheTests.cs" />
     <Compile Include="Tests\Searching\InvertedIndexTests.cs" />
     <Compile Include="Tests\Sorting\BubbleSortTest.cs" />
@@ -119,14 +204,36 @@
     <Compile Include="Trie\ITrie.cs" />
     <Compile Include="Trie\Trie.cs" />
     <Compile Include="Trie\TrieNode.cs" />
+    <Compile Include="Graphs\Graph.cs" />
+    <Compile Include="Tests\Graphs\GraphTests.cs" />
+    <Compile Include="Graphs\Search.cs" />
+    <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
+    <Compile Include="BinaryTree\InOrderTraversal.cs" />
+    <Compile Include="Utils\PrintUtils.cs" />
+    <Compile Include="BinaryTree\BinaryTreeConstruction.cs" />
+    <Compile Include="BinaryTree\FlattenTree.cs" />
+    <Compile Include="BinaryTree\InvertBinaryTree.cs" />
+    <Compile Include="Graphs\GraphUtils.cs" />
+    <Compile Include="Trie\MyTrie.cs" />
+    <Compile Include="Arrays\DutchNationalFlag.cs" />
+    <Compile Include="Tests\Arrays\DutchNationFlagTests.cs" />
+    <Compile Include="Leetcode\Hard\WordSearchII.cs" />
+    <Compile Include="Tests\Leetcode\Hard\WordSearchIITests.cs" />
+    <Compile Include="Stack\Implementation\StackUsingArray.cs" />
+    <Compile Include="Tests\Stack\StackUsingArrayTests.cs" />
+    <Compile Include="Stack\Implementation\IStack.cs" />
+    <Compile Include="Arrays\BinarySearch.cs" />
+    <Compile Include="Leetcode\Matrix\SpiralMatrix.cs" />
+    <Compile Include="Tests\Leetcode\Matrix\SpiralMatrixTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Tests\Graphs\" />
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

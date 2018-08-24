@@ -4,8 +4,9 @@ namespace ScratchPadTests.BinaryTree
 {
     public class TreeNode
     {
-        public TreeNode left, right;
+        public TreeNode left, right, parent;
         public int data;
+        public int level;
 
         public TreeNode()
         {
@@ -13,11 +14,12 @@ namespace ScratchPadTests.BinaryTree
             right = null;
         }
 
-        public TreeNode(int data, TreeNode left = null, TreeNode right = null)
+        public TreeNode(int data, TreeNode left = null, TreeNode right = null, TreeNode parent = null)
         {
             this.data = data;
             this.left = left;
             this.right = right;
+            this.parent = parent;
         }
 
         public static List<TreeNode> GetChildren(TreeNode root)
