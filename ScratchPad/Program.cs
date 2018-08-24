@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ScratchPad.Heap;
 using ScratchPad.Leetcode;
+using ScratchPad.Tests.Arrays;
 using ScratchPad.Tests.Heap;
 
 namespace ScratchPadTests
@@ -31,11 +32,12 @@ namespace ScratchPadTests
             //    {'i', 'h', 'k', 'r'},
             //    {'i', 'f', 'l', 'v'}
             //};
-           // var dict = new [] { "oath", "pea", "eat", "rain" };
-           // var f = new WordSearch2().FindWords(new char[,] { {'a'} }, new []{"a"});
-           //MergeKSortedArraysTest.Run();
-           //MedianFinderTest.Run();
-           SlidingWindowMaximumTest.Run();
+            // var dict = new [] { "oath", "pea", "eat", "rain" };
+            // var f = new WordSearch2().FindWords(new char[,] { {'a'} }, new []{"a"});
+            //MergeKSortedArraysTest.Run();
+            //MedianFinderTest.Run();
+            //SlidingWindowMaximumTest.Run();
+            DutchNationFlagTests.Run();
         }
     }
 }

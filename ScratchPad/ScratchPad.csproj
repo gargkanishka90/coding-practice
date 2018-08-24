@@ -210,12 +210,32 @@
     <Compile Include="BinaryTree\FlattenTree.cs" />
     <Compile Include="BinaryTree\InvertBinaryTree.cs" />
     <Compile Include="Graphs\GraphUtils.cs" />
+    <Compile Include="Trie\MyTrie.cs" />
+    <Compile Include="Arrays\DutchNationalFlag.cs" />
+    <Compile Include="Tests\Arrays\DutchNationFlagTests.cs" />
+    <Compile Include="Leetcode\Hard\WordSearchII.cs" />
+    <Compile Include="Tests\Leetcode\Hard\WordSearchIITests.cs" />
+    <Compile Include="Stack\Implementation\StackUsingArray.cs" />
+    <Compile Include="Tests\Stack\StackUsingArrayTests.cs" />
+    <Compile Include="Stack\Implementation\IStack.cs" />
+    <Compile Include="Arrays\BinarySearch.cs" />
+    <Compile Include="Leetcode\Matrix\SpiralMatrix.cs" />
+    <Compile Include="Tests\Leetcode\Matrix\SpiralMatrixTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Leetcode\Hard\" />
+    <Folder Include="Tests\Leetcode\Hard\" />
+    <Folder Include="Stack\" />
+    <Folder Include="Stack\Implementation\" />
+    <Folder Include="Tests\Stack\" />
+    <Folder Include="Leetcode\Matrix\" />
+    <Folder Include="Tests\Leetcode\Matrix\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
