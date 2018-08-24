@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using ScratchPad.DesignPatterns.Builder;
 using ScratchPad.Heap;
 using ScratchPad.Leetcode;
 using ScratchPad.Tests.Arrays;
@@ -37,7 +38,8 @@ namespace ScratchPadTests
             //MergeKSortedArraysTest.Run();
             //MedianFinderTest.Run();
             //SlidingWindowMaximumTest.Run();
-            DutchNationFlagTests.Run();
+            //DutchNationFlagTests.Run();
+            BuilderClient.TestBuilderPattern();
         }
     }
 }

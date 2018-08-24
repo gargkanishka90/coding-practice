@@ -87,6 +87,14 @@
     <Compile Include="BST\LowestCommonAncestorBST.cs" />
     <Compile Include="BST\PreOrderToBST.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
+    <Compile Include="DesignPatterns\Builder\BuilderClient.cs" />
+    <Compile Include="DesignPatterns\Builder\CarBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\IBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\Products\Car.cs" />
+    <Compile Include="DesignPatterns\Builder\Products\IVehicle.cs" />
+    <Compile Include="DesignPatterns\Builder\Products\Truck.cs" />
+    <Compile Include="DesignPatterns\Builder\TruckBuilder.cs" />
+    <Compile Include="DesignPatterns\Builder\Director.cs" />
     <Compile Include="DesignPatterns\Strategy\StrategyPattern.cs" />
     <Compile Include="DesignPatterns\Strategy\Customer.cs" />
     <Compile Include="DesignPatterns\Strategy\IBillingStrategy.cs" />
