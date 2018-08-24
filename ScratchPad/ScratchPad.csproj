@@ -64,6 +64,7 @@
     <Compile Include="Heap\MergeKSortedArrays.cs" />
     <Compile Include="Heap\MyHeap.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
+    <Compile Include="Leetcode\FindAllDisappearedNumbers.cs" />
     <Compile Include="Leetcode\SortColors.cs" />
     <Compile Include="Leetcode\TwoSum.cs" />
     <Compile Include="LinkedList\AddTwoNumbers.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
     <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
+    <Compile Include="Tests\Leetcode\FindAllDisappearedNumbersTest.cs" />
     <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
     <Compile Include="Tests\LinkedListTests\AddTwoNumbersTest.cs" />
     <Compile Include="Tests\LinkedListTests\DeleteMafterEveryNTest.cs" />
