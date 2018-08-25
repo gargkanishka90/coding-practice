@@ -6,5 +6,6 @@
         string Color { get; set; }
         bool AirConditioned { get; set; }
         string Name { get; set; }
+        int NumSeats { get; set; }
     }
 }

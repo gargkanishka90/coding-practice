@@ -12,5 +12,6 @@ namespace ScratchPad.DesignPatterns.Builder.Products
         public string Color { get; set; }
         public bool AirConditioned { get; set; }
         public string Name { get; set; }
+        public int NumSeats { get; set; }
     }
 }

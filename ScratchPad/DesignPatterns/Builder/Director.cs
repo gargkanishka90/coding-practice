@@ -21,8 +21,10 @@ namespace ScratchPad.DesignPatterns
             _builder = newBuilder;
         }
 
-        public IVehicle MakeFinalProduct()
+        public IVehicle MakeFinalProduct(string type = null)
         {
+            if (type != null)
+                return _builder.MakeProduct(type);
             return _builder.MakeProduct();
         }
     }

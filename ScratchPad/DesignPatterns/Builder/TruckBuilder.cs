@@ -10,7 +10,7 @@ namespace ScratchPad.DesignPatterns.Builder
     public class TruckBuilder : IBuilder
     {
         private Truck _truck;
-        public IVehicle MakeProduct()
+        public IVehicle MakeProduct(string type = null)
         {
             _truck = new Truck();
             AddBody();
@@ -43,6 +43,11 @@ namespace ScratchPad.DesignPatterns.Builder
         public void AddInterior()
         {
             Console.WriteLine("Adding seats inside Truck.");
+        }
+
+        public void AddSeats(int numSeats)
+        {
+            throw new NotImplementedException();
         }
     }
 }

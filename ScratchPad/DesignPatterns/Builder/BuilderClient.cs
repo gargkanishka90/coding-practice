@@ -11,9 +11,11 @@ namespace ScratchPad.DesignPatterns.Builder
         public static void TestBuilderPattern()
         {
             var director = new Director(new CarBuilder());
-            director.MakeFinalProduct();
+            director.MakeFinalProduct("suv");
             director.ChangeBuilder(new TruckBuilder());
             director.MakeFinalProduct();
+            director.ChangeBuilder(new CarBuilder());
+            director.MakeFinalProduct("sedan");
         }
     }
 }

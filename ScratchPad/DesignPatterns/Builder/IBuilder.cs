@@ -9,12 +9,12 @@ namespace ScratchPad.DesignPatterns.Builder
 {
     public interface IBuilder
     {
-        IVehicle MakeProduct();
+        IVehicle MakeProduct(string type = null);
         void Reset();
         void AddBody();
         void AddTires();
         void PaintBody();
         void AddInterior();
-
+        void AddSeats(int numSeats);
     }
 }
