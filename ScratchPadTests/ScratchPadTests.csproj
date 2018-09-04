@@ -49,6 +49,50 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Arrays\ArrayPairSumTests.cs" />
+    <Compile Include="Tests\Arrays\DutchNationFlagTests.cs" />
+    <Compile Include="Tests\Arrays\MatrixZeroTests.cs" />
+    <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
+    <Compile Include="Tests\Arrays\MissingElementTests.cs" />
+    <Compile Include="Tests\BacktrackingTests\PermutationsTests.cs" />
+    <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
+    <Compile Include="Tests\BST\BinarySearchTreeTests.cs" />
+    <Compile Include="Tests\BST\BSTSuccessorTests.cs" />
+    <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
+    <Compile Include="Tests\Graphs\GraphTests.cs" />
+    <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
+    <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
+    <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
+    <Compile Include="Tests\Hashing\KMostFrequentlyTest.cs" />
+    <Compile Include="Tests\Hashing\SingleNumberTest.cs" />
+    <Compile Include="Tests\Hashing\ValidAnagramTest.cs" />
+    <Compile Include="Tests\Heap\MedianFinderTest.cs" />
+    <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
+    <Compile Include="Tests\Heap\SlidingWindowMaximumTest.cs" />
+    <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
+    <Compile Include="Tests\Leetcode\FindAllDisappearedNumbersTest.cs" />
+    <Compile Include="Tests\Leetcode\Hard\WordSearchIITests.cs" />
+    <Compile Include="Tests\Leetcode\Matrix\SpiralMatrixTests.cs" />
+    <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
+    <Compile Include="Tests\LinkedListTests\AddTwoNumbersTest.cs" />
+    <Compile Include="Tests\LinkedListTests\DeleteMafterEveryNTest.cs" />
+    <Compile Include="Tests\LinkedListTests\LinkedListCycleTests.cs" />
+    <Compile Include="Tests\LinkedListTests\RemoveDupsTest.cs" />
+    <Compile Include="Tests\LinkedListTests\ReverseSLLTest.cs" />
+    <Compile Include="Tests\LinkedListTests\ReverseSubListTests.cs" />
+    <Compile Include="Tests\LinkedListTests\SplitLinkedListTests.cs" />
+    <Compile Include="Tests\LongestIncreasingSubsequenceTests.cs" />
+    <Compile Include="Tests\LRUCache\LRUCacheTests.cs" />
+    <Compile Include="Tests\Searching\InvertedIndexTests.cs" />
+    <Compile Include="Tests\Sorting\BubbleSortTest.cs" />
+    <Compile Include="Tests\Sorting\QuickSortTest.cs" />
+    <Compile Include="Tests\Stack\StackUsingArrayTests.cs" />
+    <Compile Include="Tests\StringTests\FindFirstUniqueCharacterTest.cs" />
+    <Compile Include="Tests\StringTests\GenerateAllPermutationsTest.cs" />
+    <Compile Include="Tests\StringTests\InsertCharsTest.cs" />
+    <Compile Include="Tests\StringTests\ReplaceCharsTest.cs" />
+    <Compile Include="Tests\StringTests\UniqueCharactersTest.cs" />
+    <Compile Include="Tests\TrieTests\TrieTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -60,7 +104,9 @@
       <Name>ScratchPad</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

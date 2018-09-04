@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using ScratchPad.DesignPatterns.Builder;
-using ScratchPad.Heap;
-using ScratchPad.Leetcode;
-using ScratchPad.Tests.Arrays;
-using ScratchPad.Tests.Heap;
+﻿using ScratchPad.DesignPatterns.Builder;
 
 namespace ScratchPadTests
 {
