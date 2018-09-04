@@ -54,7 +54,7 @@
     <Compile Include="Tests\Arrays\MatrixZeroTests.cs" />
     <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
-    <Compile Include="Tests\BacktrackingTests\PermutationsTests.cs" />
+    <Compile Include="Tests\BacktrackingTests\BacktrackingTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
     <Compile Include="Tests\BST\BinarySearchTreeTests.cs" />
     <Compile Include="Tests\BST\BSTSuccessorTests.cs" />

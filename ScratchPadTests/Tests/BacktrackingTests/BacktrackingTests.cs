@@ -9,7 +9,7 @@ using ScratchPad.Backtracking;
 namespace ScratchPad.Tests.BacktrackingTests
 {
     [TestFixture]
-    public class PermutationsTests
+    public class BacktrackingTests
     {
         [Test]
         public void Test01()
@@ -20,8 +20,18 @@ namespace ScratchPad.Tests.BacktrackingTests
 
            // var ss = instance.GetPermutation(3, 5);
 
-            var ins = new PalindromePartition();
-            var sss = ins.Partition("nitin");
+            
+        }
+
+        [Test]
+        public void Palindrome_Partition_Returns_All_Valid_Sets()
+        {
+            var instance = new PalindromePartition();
+
+            var nitin = instance.Partition("nitin");
+            Assert.AreEqual(3, nitin.Count);
+
+            var aab = instance.Partition("aab");
         }
     }
 }

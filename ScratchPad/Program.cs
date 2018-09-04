@@ -1,4 +1,5 @@
-﻿using ScratchPad.DesignPatterns.Builder;
+﻿using ScratchPad.Backtracking;
+using ScratchPad.DesignPatterns.Builder;
 
 namespace ScratchPadTests
 {
@@ -30,6 +31,9 @@ namespace ScratchPadTests
             //SlidingWindowMaximumTest.Run();
             //DutchNationFlagTests.Run();
             //BuilderClient.TestBuilderPattern();
+            var instance = new PalindromePartition();
+
+            var nitin = instance.Partition("nitin");
         }
     }
 }

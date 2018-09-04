@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ScratchPad.Backtracking
 {
@@ -25,26 +22,31 @@ namespace ScratchPad.Backtracking
         {
             if (start == s.Length)
             {
+                Console.WriteLine($"start: {start}, RESULT: [{string.Join(" , ", partial.ToArray())}]");
                 result.Add(new List<string>(partial));
-                //partial = new List<string>();
             }
             else
             {
                 for (var i = start; i < s.Length; ++i)
-                {    
-                    if (IsPalindrome(s.ToCharArray(), start, i))
+                {
+                    var temp = s.Substring(start, i - start + 1);
+                    Console.WriteLine($"Is '{temp}' a palindrome? {(IsPalindrome(temp) ? "YES" : "NO")}");
+                    if (IsPalindrome(temp))
                     {
-                        var temp = s.Substring(start, i - start + 1);
                         partial.Add(temp);
+                        Console.WriteLine($"ADD - start: {start}, temp: {temp}, partial: {string.Join(" , ", partial.ToArray())}");
                         Helper(s, i + 1, result, partial);
                         partial.RemoveAt(partial.Count - 1);
+                        Console.WriteLine($"REMOVE/BACKTRACK - start: {start}, temp: {temp}, partial: {string.Join(" , ", partial.ToArray())}");
                     }
                 }
             }
         }
 
-        public bool IsPalindrome(char[] s, int low, int high)
+        public bool IsPalindrome(string s)
         {
+            var low = 0;
+            var high = s.Length - 1;
             while (low < high)
                 if (s[low++] != s[high--]) return false;
             return true;
