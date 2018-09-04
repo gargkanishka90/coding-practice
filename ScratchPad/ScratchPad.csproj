@@ -129,6 +129,7 @@
     <Compile Include="Leetcode\ArrayRotation.cs" />
     <Compile Include="Leetcode\CountAndSayClass.cs" />
     <Compile Include="Leetcode\DecodeWays.cs" />
+    <Compile Include="Leetcode\Hard\MinWindowSubstring.cs" />
     <Compile Include="Leetcode\IntersectClass.cs" />
     <Compile Include="Leetcode\LIS.cs" />
     <Compile Include="Leetcode\Match.cs" />
