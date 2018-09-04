@@ -29,7 +29,7 @@ namespace ScratchPadTests
             //MedianFinderTest.Run();
             //SlidingWindowMaximumTest.Run();
             //DutchNationFlagTests.Run();
-            BuilderClient.TestBuilderPattern();
+            //BuilderClient.TestBuilderPattern();
         }
     }
 }

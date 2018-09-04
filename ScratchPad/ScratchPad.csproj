@@ -57,7 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AmazonProblem.cs" />
+    <Compile Include="Companies\AmazonProblem.cs" />
     <Compile Include="Arrays\ArrayPairSum.cs" />
     <Compile Include="Arrays\ArrayShuffle.cs" />
     <Compile Include="Arrays\MatrixZero.cs" />
