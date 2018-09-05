@@ -12,16 +12,26 @@ namespace ScratchPad.Backtracking
         {
             var result = new List<IList<int>>();
             if (nums.Length == 0) return result;
-            BackTrackSubset(nums, result, 0);
+            SubsetHelper(new List<int>(), result, 0, nums);
             return result;
         }
 
-        private void BackTrackSubset(int[] nums, IList<IList<int>> result, int left)
+        private void SubsetHelper(List<int> partial, IList<IList<int>> result, int start, int[] nums)
         {
-            if (left == nums.Length - 1)
+            result.Add(new List<int>(partial));
+            for (var i = start; i < nums.Length; i++)
             {
-                return;
+                partial.Add(nums[i]);
+                SubsetHelper(partial, result, i + 1, nums);
+                partial.RemoveAt(partial.Count - 1);
             }
-        } 
+        }
+
+        private void Swap(int[] nums, int i, int j)
+        {
+            var temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
     }
 }

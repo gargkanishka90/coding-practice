@@ -8,16 +8,16 @@ namespace ScratchPad.Backtracking
 {
     public class Permutations
     {
-        public IEnumerable<string> FindAllPermutations(string input)
+        public IEnumerable<string> FindAllStringPermutations(string input)
         {
             var result = new List<string>();
             if (string.IsNullOrWhiteSpace(input))
                 return result;
-            PermHelper(input.ToCharArray(), 0, "", result);
+            StringPermutationHelper(input.ToCharArray(), 0, "", result);
             return result;
         }
 
-        private void PermHelper(char[] input, int start, string partial, List<string> result)
+        private void StringPermutationHelper(char[] input, int start, string partial, List<string> result)
         {
             if (start == input.Length)
             {
@@ -28,7 +28,7 @@ namespace ScratchPad.Backtracking
                 for (var i = start; i < input.Length; i++)
                 {
                     Swap(input, start, i);
-                    PermHelper(input, start + 1, partial + input[start], result);
+                    StringPermutationHelper(input, start + 1, partial + input[start], result);
                     Swap(input, start, i);
                 }
             }
@@ -41,7 +41,7 @@ namespace ScratchPad.Backtracking
             s[pos2] = temp;
         }
 
-        public IList<IList<int>> Permute(int[] nums)
+        public IList<IList<int>> FindAllIntegerPermutations(int[] nums)
         {
             var result = new List<IList<int>>();
             if (nums.Length == 0)
@@ -49,12 +49,12 @@ namespace ScratchPad.Backtracking
                 result.Add(new List<int>());
                 return result;
             }
-            Helper(nums, 0, result);
+            IntegerPermutationHelper(nums, 0, result);
 
             return result;
         }
 
-        private void Helper(int[] nums, int start, List<IList<int>> result)
+        private void IntegerPermutationHelper(int[] nums, int start, List<IList<int>> result)
         {
             if (start + 1 == nums.Length)
             {
@@ -65,7 +65,7 @@ namespace ScratchPad.Backtracking
                 for (var i = start; i < nums.Length; ++i)
                 {
                     Swap(nums, i, start);
-                    Helper(nums, start + 1, result);
+                    IntegerPermutationHelper(nums, start + 1, result);
                     Swap(nums, i, start);
                 }
             }

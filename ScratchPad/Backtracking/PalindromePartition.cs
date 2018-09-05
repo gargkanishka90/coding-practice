@@ -22,7 +22,7 @@ namespace ScratchPad.Backtracking
         {
             if (start == s.Length)
             {
-                Console.WriteLine($"start: {start}, RESULT: [{string.Join(" , ", partial.ToArray())}]");
+                Console.WriteLine($"start: {start}, RESULT: [ {string.Join(" , ", partial.ToArray())} ]");
                 result.Add(new List<string>(partial));
             }
             else
@@ -30,14 +30,15 @@ namespace ScratchPad.Backtracking
                 for (var i = start; i < s.Length; ++i)
                 {
                     var temp = s.Substring(start, i - start + 1);
-                    Console.WriteLine($"Is '{temp}' a palindrome? {(IsPalindrome(temp) ? "YES" : "NO")}");
-                    if (IsPalindrome(temp))
+                    var isPalindrome = IsPalindrome(temp);
+                    Console.WriteLine($"Is '{temp}' a palindrome? {(isPalindrome ? "YES" : "NO")}");
+                    if (isPalindrome)
                     {
                         partial.Add(temp);
-                        Console.WriteLine($"ADD - start: {start}, temp: {temp}, partial: {string.Join(" , ", partial.ToArray())}");
+                        Console.WriteLine($"ADD - start: {start}, temp: {temp}, partial: [ {string.Join(" , ", partial.ToArray())} ]");
                         Helper(s, i + 1, result, partial);
                         partial.RemoveAt(partial.Count - 1);
-                        Console.WriteLine($"REMOVE/BACKTRACK - start: {start}, temp: {temp}, partial: {string.Join(" , ", partial.ToArray())}");
+                        Console.WriteLine($"REMOVE/BACKTRACK - start: {start}, temp: {temp}, partial: [ {string.Join(" , ", partial.ToArray())} ]");
                     }
                 }
             }

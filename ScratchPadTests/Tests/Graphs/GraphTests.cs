@@ -11,20 +11,19 @@ namespace ScratchPad.Tests.Graphs
         [Test]
         public void CreateGraphTest(){
             var g = GraphUtils.GenerateSampleUndirectedGraph();
-            GraphUtils.PrintSampleGraph(g);
-            Console.WriteLine("--------------------------------");
-            var dg = GraphUtils.GenerateSampleDirectedGraph();
-            GraphUtils.PrintSampleGraph(dg);
-            Console.WriteLine(Search.BFS(dg, 1, 5));
-            Console.WriteLine(Search.BFS(dg, 3, 0));
+
+            g.PrintAllVertices();
+            g.PrintAllEdges();
         }
 
         [Test]
         public void BFSTest(){
             var g = GraphUtils.GenerateSampleUndirectedGraph();
-            GraphUtils.PrintSampleGraph(g);
-            var bfs = Search.BFS(g, 2);
-            Assert.AreEqual(new List<int>{2,1,3,0,4}, bfs);
+
+            g.PrintAllVertices();
+            g.PrintAllEdges();
+            var bfs = g.BFS();
+            Assert.AreEqual(new List<int>{10,20,30,40,50}, bfs);
         }
     }
 }

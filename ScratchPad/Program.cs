@@ -1,5 +1,8 @@
-﻿using ScratchPad.Backtracking;
+﻿using System;
+using System.Collections.Generic;
+using ScratchPad.Backtracking;
 using ScratchPad.DesignPatterns.Builder;
+using ScratchPad.Graphs;
 
 namespace ScratchPadTests
 {
@@ -31,9 +34,27 @@ namespace ScratchPadTests
             //SlidingWindowMaximumTest.Run();
             //DutchNationFlagTests.Run();
             //BuilderClient.TestBuilderPattern();
-            var instance = new PalindromePartition();
+            //var instance = new PalindromePartition();
 
-            var nitin = instance.Partition("nitin");
+            //var nitin = instance.Partition("niaktkain");
+
+            //var instance = new Subset();
+            //var res = instance.Subsets(new[] {1, 2, 3});
+
+            //var g = GraphUtils.GenerateSampleUndirectedGraph();
+            //GraphUtils.PrintSampleGraph(g);
+            //Console.WriteLine("--------------------------------");
+            //var dg = GraphUtils.GenerateSampleDirectedGraph();
+            //GraphUtils.PrintSampleGraph(dg);
+            //Console.WriteLine(Search.BFS(dg, 1, 5));
+            //Console.WriteLine(Search.BFS(dg, 3, 0));
+
+            var g = GraphUtils.GenerateSampleUndirectedGraph();
+
+            g.PrintAllVertices();
+            g.PrintAllEdges();
+
+            g.BFS();
         }
     }
 }

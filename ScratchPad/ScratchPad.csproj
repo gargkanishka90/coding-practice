@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backtracking\BinaryNumbers.cs" />
     <Compile Include="Companies\AmazonProblem.cs" />
     <Compile Include="Arrays\ArrayPairSum.cs" />
     <Compile Include="Arrays\ArrayShuffle.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="DynamicProgramming\RobotGrid.cs" />
     <Compile Include="DynamicProgramming\StringHelpers.cs" />
     <Compile Include="Graphs\Edge.cs" />
+    <Compile Include="Graphs\Graph.cs" />
     <Compile Include="Graphs\Vertex.cs" />
     <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
@@ -178,8 +180,6 @@
     <Compile Include="Trie\ITrie.cs" />
     <Compile Include="Trie\Trie.cs" />
     <Compile Include="Trie\TrieNode.cs" />
-    <Compile Include="Graphs\Graph.cs" />
-    <Compile Include="Graphs\Search.cs" />
     <Compile Include="BinaryTree\InOrderTraversal.cs" />
     <Compile Include="Utils\PrintUtils.cs" />
     <Compile Include="BinaryTree\BinaryTreeConstruction.cs" />
