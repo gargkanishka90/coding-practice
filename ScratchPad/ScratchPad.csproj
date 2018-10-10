@@ -196,6 +196,7 @@
     <Compile Include="Arrays\BinarySearch.cs" />
     <Compile Include="Leetcode\Matrix\SpiralMatrix.cs" />
     <Compile Include="Leetcode\TopKFrequentWords.cs" />
+    <Compile Include="Leetcode\TopKFrequentWordFinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
