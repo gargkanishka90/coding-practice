@@ -195,6 +195,7 @@
     <Compile Include="Stack\Implementation\IStack.cs" />
     <Compile Include="Arrays\BinarySearch.cs" />
     <Compile Include="Leetcode\Matrix\SpiralMatrix.cs" />
+    <Compile Include="Leetcode\TopKFrequentWords.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

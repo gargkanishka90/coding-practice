@@ -94,6 +94,7 @@
     <Compile Include="Tests\StringTests\ReplaceCharsTest.cs" />
     <Compile Include="Tests\StringTests\UniqueCharactersTest.cs" />
     <Compile Include="Tests\TrieTests\TrieTest.cs" />
+    <Compile Include="Tests\Leetcode\TopKFrequentWordTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
