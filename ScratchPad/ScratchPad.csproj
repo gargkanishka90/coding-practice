@@ -140,6 +140,7 @@
     <Compile Include="Leetcode\MoveZerosClass.cs" />
     <Compile Include="Leetcode\BitManipulationClass.cs" />
     <Compile Include="Leetcode\NormalizePath.cs" />
+    <Compile Include="Leetcode\NumArray.cs" />
     <Compile Include="Leetcode\PhoneNumberLetterCombination.cs" />
     <Compile Include="Leetcode\PlusOne.cs" />
     <Compile Include="Leetcode\ReverseBits.cs" />
@@ -170,6 +171,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Searching\InvertedIndex.cs" />
     <Compile Include="DynamicProgramming\LongestCommonSubsequence.cs" />
+    <Compile Include="SegmentTree\SegmentTree.cs" />
     <Compile Include="Sorting\BubbleSort.cs" />
     <Compile Include="Sorting\QuickSort.cs" />
     <Compile Include="String\FindFirstUniqueCharacter.cs" />

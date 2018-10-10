@@ -84,6 +84,7 @@
     <Compile Include="Tests\LongestIncreasingSubsequenceTests.cs" />
     <Compile Include="Tests\LRUCache\LRUCacheTests.cs" />
     <Compile Include="Tests\Searching\InvertedIndexTests.cs" />
+    <Compile Include="Tests\SegmentTreeTests\SegmentTreeTests.cs" />
     <Compile Include="Tests\Sorting\BubbleSortTest.cs" />
     <Compile Include="Tests\Sorting\QuickSortTest.cs" />
     <Compile Include="Tests\Stack\StackUsingArrayTests.cs" />
