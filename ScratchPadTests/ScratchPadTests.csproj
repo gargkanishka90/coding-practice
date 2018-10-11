@@ -91,6 +91,8 @@
     <Compile Include="Tests\StringTests\FindFirstUniqueCharacterTest.cs" />
     <Compile Include="Tests\StringTests\GenerateAllPermutationsTest.cs" />
     <Compile Include="Tests\StringTests\InsertCharsTest.cs" />
+    <Compile Include="Tests\StringTests\IntegerToEnglishWords.cs" />
+    <Compile Include="Tests\StringTests\IntegerToEnglishWordTests.cs" />
     <Compile Include="Tests\StringTests\ReplaceCharsTest.cs" />
     <Compile Include="Tests\StringTests\StringIntegerConvertTests.cs" />
     <Compile Include="Tests\StringTests\UniqueCharactersTest.cs" />
