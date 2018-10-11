@@ -92,6 +92,7 @@
     <Compile Include="Tests\StringTests\GenerateAllPermutationsTest.cs" />
     <Compile Include="Tests\StringTests\InsertCharsTest.cs" />
     <Compile Include="Tests\StringTests\ReplaceCharsTest.cs" />
+    <Compile Include="Tests\StringTests\StringIntegerConvertTests.cs" />
     <Compile Include="Tests\StringTests\UniqueCharactersTest.cs" />
     <Compile Include="Tests\TrieTests\TrieTest.cs" />
     <Compile Include="Tests\Leetcode\TopKFrequentWordFinderTests.cs" />

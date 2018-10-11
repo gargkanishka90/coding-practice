@@ -31,13 +31,33 @@ namespace ScratchPad.Leetcode
             return x.ToList();
         }
 
-        internal class Item{
+        internal class Item : IComparable<Item> {
             public int count { get; set; }
             public string word { get; set; }
 
             internal Item(int count, string word){
                 this.count = count;
                 this.word = word;
+            }
+
+            public int CompareTo(Item other)
+            {
+                if (other == null)
+                    return 1;
+
+                if (count == other.count)
+                    return other.word.CompareTo(word); // -1 if this < other, 0 if this == other, 1 if this > other
+                return count - other.count > 0 ? 1 : -1;
+            }
+
+            public static bool operator > (Item item1, Item item2)
+            {
+                return item1.CompareTo(item2) == 1;
+            }
+
+            public static bool operator < (Item item1, Item item2)
+            {
+                return item1.CompareTo(item2) == -1;
             }
         }
 
@@ -57,7 +77,7 @@ namespace ScratchPad.Leetcode
                 } 
                 else 
                 {
-                    if (newItem.count > PeekMin().count)
+                    if (newItem > PeekMin())
                     {
                         // kick out min element
                         _data[0] = newItem;
@@ -75,8 +95,7 @@ namespace ScratchPad.Leetcode
             private void HeapifyUp(int i)
             {
                 while(i > 0){
-                    if (_data[Parent(i)].count >= _data[i].count 
-                        && string.Compare(_data[Parent(i)].word, _data[i].word) < 0){
+                    if (_data[Parent(i)] > _data[i]){
                         var temp = _data[Parent(i)];
                         _data[Parent(i)] = _data[i];
                         _data[i] = temp;
@@ -90,18 +109,17 @@ namespace ScratchPad.Leetcode
 
             private void HeapifyDown(int i)
             {
-                var min = _data[0].count;
+                var min = _data[i];
                 var minIndex = i;
 
-                if(LeftChild(minIndex) < _data.Count && _data[LeftChild(minIndex)].count < min){
-                    min = _data[LeftChild(minIndex)].count;
-                    minIndex = LeftChild(minIndex);
+                if(LeftChild(i) < _data.Count && _data[LeftChild(i)] < min)
+                {
+                    minIndex = LeftChild(i);
                 }
 
-                if (RightChild(minIndex) < _data.Count && _data[RightChild(minIndex)].count < min)
+                if (RightChild(i) < _data.Count && _data[RightChild(i)] < min)
                 {
-                    min = _data[RightChild(minIndex)].count;
-                    minIndex = RightChild(minIndex);
+                    minIndex = RightChild(i);
                 }
 
                 if(minIndex != i){

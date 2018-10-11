@@ -23,6 +23,16 @@ namespace ScratchPadTests.Tests.Leetcode
             var input = new string[] { "the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is" };
             var res = instance.Find(input, 4);
             Assert.AreEqual(new List<string>() { "the", "is", "sunny", "day" }, res);
+            
+        }
+
+        [Test]
+        public void Test03()
+        {
+            var instance = new TopKFrequentWordFinder();
+            var input = new[] { "i", "love", "leetcode", "i", "love", "coding" };
+            var res = instance.Find(input, 3);
+            //Assert.AreEqual(new List<string>() { "the", "is", "sunny", "day" }, res);
         }
     }
 }

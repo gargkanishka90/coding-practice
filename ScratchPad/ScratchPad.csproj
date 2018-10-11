@@ -178,6 +178,7 @@
     <Compile Include="String\GenerateAllPermutations.cs" />
     <Compile Include="String\InsertChars.cs" />
     <Compile Include="String\ReplaceChars.cs" />
+    <Compile Include="String\StringIntegerConvert.cs" />
     <Compile Include="String\UniqueCharacters.cs" />
     <Compile Include="Trie\ITrie.cs" />
     <Compile Include="Trie\Trie.cs" />
