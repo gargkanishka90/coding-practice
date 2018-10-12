@@ -98,6 +98,7 @@
     <Compile Include="Tests\StringTests\UniqueCharactersTest.cs" />
     <Compile Include="Tests\TrieTests\TrieTest.cs" />
     <Compile Include="Tests\Leetcode\TopKFrequentWordFinderTests.cs" />
+    <Compile Include="Tests\Heap\FindKthLargestElementTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

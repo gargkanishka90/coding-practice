@@ -197,6 +197,7 @@
     <Compile Include="Arrays\BinarySearch.cs" />
     <Compile Include="Leetcode\Matrix\SpiralMatrix.cs" />
     <Compile Include="Leetcode\TopKFrequentWordFinder.cs" />
+    <Compile Include="Heap\FindKthLargestElement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
