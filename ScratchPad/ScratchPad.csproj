@@ -180,6 +180,7 @@
     <Compile Include="String\FindFirstUniqueCharacter.cs" />
     <Compile Include="String\GenerateAllPermutations.cs" />
     <Compile Include="String\InsertChars.cs" />
+    <Compile Include="String\LookAndSay.cs" />
     <Compile Include="String\ReplaceChars.cs" />
     <Compile Include="String\StringIntegerConvert.cs" />
     <Compile Include="String\UniqueCharacters.cs" />
@@ -214,10 +215,7 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Leetcode\Patterns\" />
-    <Folder Include="Leetcode\Patterns\MinimumWindow\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

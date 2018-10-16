@@ -91,6 +91,7 @@
     <Compile Include="Tests\Sorting\QuickSortTest.cs" />
     <Compile Include="Tests\Stack\StackUsingArrayTests.cs" />
     <Compile Include="Tests\StringTests\FindFirstUniqueCharacterTest.cs" />
+    <Compile Include="Tests\StringTests\GeneralStringTests.cs" />
     <Compile Include="Tests\StringTests\GenerateAllPermutationsTest.cs" />
     <Compile Include="Tests\StringTests\InsertCharsTest.cs" />
     <Compile Include="Tests\StringTests\IntegerToEnglishWords.cs" />
