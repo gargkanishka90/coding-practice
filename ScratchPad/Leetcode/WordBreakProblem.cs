@@ -9,51 +9,46 @@ namespace ScratchPad.Leetcode
     public class WordBreakProblem
     {
         // { i, like, sam, sung, samsung, mobile, ice, cream, icecream, man, go, mango
-        // To Search: ilike
-        //public static IList<string> WordBreak1(string input, string[] dictionary)
-        //{
-        //    var result = new HashSet<string>();
-        //    var set = new HashSet<string>();
-        //    foreach (var entry in dictionary)
-        //    {
-        //        set.Add(entry);
-        //    }
-        //    var memory = new Dictionary<string, bool>();
-        //    //WordBreakRec(input, result, set);
-        //    WordBreakDP(input, result, set, memory);
-        //    return result.ToList();
-        //}
 
-        //public static IList<string> WordBreakRec(string input, HashSet<string> result, HashSet<string> set)
-        //{
-        //    if (input.Length == 0)
-        //    {
-        //        return result.ToList();
-        //    }
+        // Word Break with Memoization
+        public bool WordBreak(string s, IList<string> wordDict)
+        {
+            if (string.IsNullOrWhiteSpace(s))
+                return false;
 
-        //    for (var i = 1; i <= input.Length; i++)
-        //    {
-        //        var temp = input.Substring(0, i);
-        //        if (set.Contains(temp))
-        //        {
-        //            result.Add(temp);
-        //            WordBreakRec(input.Substring(i), result, set);
-        //        }
-        //    }
-        //    return result.ToList();
-        //}
+            var dict = new HashSet<string>(wordDict);
+            var memory = new Dictionary<string, bool>();
 
-        //public static IList<string> WordBreakDP(string input, HashSet<string> result, HashSet<string> set, IDictionary<string, bool> memory)
-        //{
-        //    if (input == "")
-        //    {
-        //        return result.ToList();
-        //    }
+            return CanBreak(s, memory, dict);
+        }
 
-        //    if
-        //}
+        private bool CanBreak(string s, IDictionary<string, bool> memory, ISet<string> dict)
+        {
+            if (s == "")
+                return true;
 
-        public static bool WordBreak(string s, IList<string> wordDict)
+            if (!memory.ContainsKey(s))
+            {
+                for (var i = 1; i <= s.Length; i++)
+                {
+                    var temp = s.Substring(0, i);
+                    var substringFound = CanBreak(s.Substring(i), memory, dict);
+
+                    memory[s.Substring(i)] = substringFound;
+
+                    if (dict.Contains(temp) && substringFound)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            return memory[s];
+        }
+
+        // word break using recursion
+        public static bool WordBreak1(string s, IList<string> wordDict)
         {
             var set = new HashSet<string>(wordDict);
             if (s == "") return true;
@@ -77,6 +72,25 @@ namespace ScratchPad.Leetcode
                 }
             }
             return false;
+        }
+
+        // The idea here is to 
+        public static bool WordBreakDP(string s, IList<string> wordDict){
+            var set = new HashSet<string>(wordDict);
+            if (s == "") return true;
+
+            var dp = new bool[s.Length + 1];
+            dp[0] = true;
+
+            for (var len = 1; len <= s.Length; len++){
+                for (var i = 0; i < len; i++){
+                    if(dp[i] && set.Contains(s.Substring(i, len))){
+                        dp[len] = true;
+                        break;
+                    }
+                }
+            }
+            return dp[s.Length];
         }
     }
 }

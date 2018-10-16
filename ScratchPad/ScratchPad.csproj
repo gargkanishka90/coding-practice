@@ -134,7 +134,6 @@
     <Compile Include="Leetcode\ArrayRotation.cs" />
     <Compile Include="Leetcode\CountAndSayClass.cs" />
     <Compile Include="Leetcode\DecodeWays.cs" />
-    <Compile Include="Leetcode\Hard\MinWindowSubstring.cs" />
     <Compile Include="Leetcode\IntersectClass.cs" />
     <Compile Include="Leetcode\LIS.cs" />
     <Compile Include="Leetcode\Match.cs" />
@@ -202,6 +201,10 @@
     <Compile Include="Leetcode\Matrix\SpiralMatrix.cs" />
     <Compile Include="Leetcode\TopKFrequentWordFinder.cs" />
     <Compile Include="Heap\FindKthLargestElement.cs" />
+    <Compile Include="Leetcode\Hard\WordLadder.cs" />
+    <Compile Include="Leetcode\Patterns\MinimumWindow\MinWindowSubstring.cs" />
+    <Compile Include="Leetcode\Patterns\MinimumWindow\FindAnagramPositions.cs" />
+    <Compile Include="Leetcode\Patterns\MinimumWindow\PermutationInAString567.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -211,6 +214,10 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Leetcode\Patterns\" />
+    <Folder Include="Leetcode\Patterns\MinimumWindow\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
