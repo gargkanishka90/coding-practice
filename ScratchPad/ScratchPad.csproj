@@ -134,6 +134,7 @@
     <Compile Include="Leetcode\ArrayRotation.cs" />
     <Compile Include="Leetcode\CountAndSayClass.cs" />
     <Compile Include="Leetcode\DecodeWays.cs" />
+    <Compile Include="Leetcode\Hard\AutocompleteSystem.cs" />
     <Compile Include="Leetcode\IntersectClass.cs" />
     <Compile Include="Leetcode\LIS.cs" />
     <Compile Include="Leetcode\Match.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="String\FindFirstUniqueCharacter.cs" />
     <Compile Include="String\GenerateAllPermutations.cs" />
     <Compile Include="String\InsertChars.cs" />
+    <Compile Include="String\LongestPalindromicSubstring.cs" />
     <Compile Include="String\LookAndSay.cs" />
     <Compile Include="String\ReplaceChars.cs" />
     <Compile Include="String\StringEdit.cs" />

@@ -73,6 +73,7 @@
     <Compile Include="Tests\Heap\SlidingWindowMaximumTest.cs" />
     <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
     <Compile Include="Tests\Leetcode\FindAllDisappearedNumbersTest.cs" />
+    <Compile Include="Tests\Leetcode\Hard\AutocompleteSystemTests.cs" />
     <Compile Include="Tests\Leetcode\Hard\WordSearchIITests.cs" />
     <Compile Include="Tests\Leetcode\Matrix\SpiralMatrixTests.cs" />
     <Compile Include="Tests\Leetcode\TwoSumTest.cs" />

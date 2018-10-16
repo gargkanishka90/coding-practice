@@ -35,5 +35,15 @@ namespace ScratchPadTests.Tests.StringTests
             Assert.IsTrue(instance.OneEditApartEfficient("cat", "at"));
             Assert.IsTrue(instance.OneEditApartEfficient("1203", "1213"));
         }
+
+        [Test]
+        public void LongestPalindromicSubstringTest()
+        {
+            var instance = new LongestPalindromicSubstring();
+            Assert.AreEqual("bb", instance.Find("abbd"));
+            Assert.AreEqual("bab", instance.Find("cbabd"));
+        }
     }
+
+    
 }
