@@ -57,7 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\RotateImage.cs" />
     <Compile Include="Backtracking\BinaryNumbers.cs" />
+    <Compile Include="BinaryTree\MergeTrees.cs" />
     <Compile Include="Companies\AmazonProblem.cs" />
     <Compile Include="Arrays\ArrayPairSum.cs" />
     <Compile Include="Arrays\ArrayShuffle.cs" />
@@ -112,6 +114,7 @@
     <Compile Include="Graphs\Edge.cs" />
     <Compile Include="Graphs\Graph.cs" />
     <Compile Include="Graphs\Vertex.cs" />
+    <Compile Include="Greedy\PartitionLabels.cs" />
     <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Hashing\FrequencySort.cs" />
@@ -135,6 +138,7 @@
     <Compile Include="Leetcode\IntersectClass.cs" />
     <Compile Include="Leetcode\LIS.cs" />
     <Compile Include="Leetcode\Match.cs" />
+    <Compile Include="Leetcode\MergeSortedLists.cs" />
     <Compile Include="Leetcode\MinStack.cs" />
     <Compile Include="Leetcode\MissingClass.cs" />
     <Compile Include="Leetcode\MoveZerosClass.cs" />

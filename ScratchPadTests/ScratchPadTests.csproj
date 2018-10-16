@@ -54,12 +54,14 @@
     <Compile Include="Tests\Arrays\MatrixZeroTests.cs" />
     <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
+    <Compile Include="Tests\Arrays\RotateImageTests.cs" />
     <Compile Include="Tests\BacktrackingTests\BacktrackingTests.cs" />
     <Compile Include="Tests\BinaryTreeTests\BinaryTreeTests.cs" />
     <Compile Include="Tests\BST\BinarySearchTreeTests.cs" />
     <Compile Include="Tests\BST\BSTSuccessorTests.cs" />
     <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
     <Compile Include="Tests\Graphs\GraphTests.cs" />
+    <Compile Include="Tests\GreedyTests\PartitionLabelTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
     <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
     <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
