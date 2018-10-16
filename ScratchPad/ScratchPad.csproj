@@ -182,6 +182,7 @@
     <Compile Include="String\InsertChars.cs" />
     <Compile Include="String\LookAndSay.cs" />
     <Compile Include="String\ReplaceChars.cs" />
+    <Compile Include="String\StringEdit.cs" />
     <Compile Include="String\StringIntegerConvert.cs" />
     <Compile Include="String\UniqueCharacters.cs" />
     <Compile Include="Trie\ITrie.cs" />
