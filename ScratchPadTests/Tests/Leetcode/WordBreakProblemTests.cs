@@ -12,7 +12,9 @@ namespace ScratchPadTests.Tests.Leetcode
             var ins = new WordBreakProblem();
             var word = "ilikesamsung";
             var dict = new[] { "i", "like", "samsung", "sam" };
-            var resr = ins.WordBreak(word, dict);
+            //var resr = ins.WordBreak(word, dict);
+            //Assert.IsTrue(resr);
+            var resr = WordBreakProblem.WordBreakDP(word, dict);
             Assert.IsTrue(resr);
         }
     }

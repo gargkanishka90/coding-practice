@@ -73,5 +73,24 @@ namespace ScratchPad.Leetcode
             }
             return false;
         }
+
+        // The idea here is to 
+        public static bool WordBreakDP(string s, IList<string> wordDict){
+            var set = new HashSet<string>(wordDict);
+            if (s == "") return true;
+
+            var dp = new bool[s.Length + 1];
+            dp[0] = true;
+
+            for (var len = 1; len <= s.Length; len++){
+                for (var i = 0; i < len; i++){
+                    if(dp[i] && set.Contains(s.Substring(i, len))){
+                        dp[len] = true;
+                        break;
+                    }
+                }
+            }
+            return dp[s.Length];
+        }
     }
 }

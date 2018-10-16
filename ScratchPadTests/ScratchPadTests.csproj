@@ -100,6 +100,10 @@
     <Compile Include="Tests\Leetcode\TopKFrequentWordFinderTests.cs" />
     <Compile Include="Tests\Heap\FindKthLargestElementTests.cs" />
     <Compile Include="Tests\Leetcode\WordBreakProblemTests.cs" />
+    <Compile Include="Tests\Leetcode\Hard\WordLadderTests.cs" />
+    <Compile Include="Tests\Leetcode\Hard\MinWindowSubstringTests.cs" />
+    <Compile Include="Tests\Leetcode\FindAnagramPositionTests.cs" />
+    <Compile Include="Tests\Leetcode\PermutationInAStringTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,7 +10,11 @@ namespace ScratchPad.Leetcode.Hard
     {
         public string MinWindow(string source, string target)
         {
-            if (source == null || target == null || target.Length > source.Length || source.Length == 0 || target.Length == 0)
+            if (source == null 
+                || target == null 
+                || target.Length > source.Length 
+                || source.Length == 0 
+                || target.Length == 0)
                 return "";
 
             var characterMap = new Dictionary<char, int>();
@@ -32,7 +36,7 @@ namespace ScratchPad.Leetcode.Hard
             var minBegin = 0;
             var minLength = int.MaxValue;
 
-            var distinctLetters = characterMap.Keys.Count;
+            var lettersToMatch = characterMap.Keys.Count;
 
             while (end < source.Length)
             {
@@ -42,13 +46,13 @@ namespace ScratchPad.Leetcode.Hard
                     characterMap[temp]--;
                     if (characterMap[temp] == 0)
                     {
-                        distinctLetters--;
+                        lettersToMatch--;
                     }
                 }
 
                 // distinctLetters is 0 means all the letters in target are in source substring
                 // distinctLetters > 0 means not all letters in target are in source substring
-                while (distinctLetters == 0)
+                while (lettersToMatch == 0)
                 {
                     if (end - begin < minLength)
                     {
@@ -62,7 +66,7 @@ namespace ScratchPad.Leetcode.Hard
                         characterMap[source[begin]]++;
                         if (characterMap[source[begin]] > 0)
                         {
-                            distinctLetters++;
+                            lettersToMatch++;
                         }
                     }
 
