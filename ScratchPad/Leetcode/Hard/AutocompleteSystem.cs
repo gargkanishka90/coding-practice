@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace ScratchPad.Leetcode.Hard
 {
     public class AutocompleteSystem
     {
+        StringBuilder query;
         private AutocompleteTrie _trie;
         // Users may input a sentence (at least one word and end with a special character '#')
         // For each character they type except '#', you need to return the top 3 historical hot sentences that have prefix the same as the part of sentence already typed.
@@ -22,6 +24,8 @@ namespace ScratchPad.Leetcode.Hard
         public AutocompleteSystem(string[] historicalSentences, int[] times)
         {
             _trie = new AutocompleteTrie();
+            if(query == null)
+                query = new StringBuilder();
             for (var i = 0; i < historicalSentences.Length; i++)
             {
                 _trie.AddWord(historicalSentences[i], times[i]);
@@ -30,15 +34,39 @@ namespace ScratchPad.Leetcode.Hard
 
         public IList<string> Input(char c)
         {
-            var query1 = "i";
-            var res = _trie.GetWordsWithThisPrefix(query1);
+            IList<TrieQueryNode> res;
+            if (c != '#')
+            {
+                query.Append(c);
+                res = _trie.GetWordsWithThisPrefix(query.ToString());
+            } 
+            else 
+            {
+                // end of sentence so update the record in trie.
+                _trie.AddWord(query.ToString());
+                query.Clear();
+                res = new List<TrieQueryNode>();
+            }
+            return Filter(res);
+        }
 
-            query1 = "ir";
-            res = _trie.GetWordsWithThisPrefix(query1);
+        private IList<string> Filter(IList<TrieQueryNode> result)
+        {
+            var res = new List<string>();
+            if (result == null || result.Count == 0)
+                return res;
 
-            query1 = "i ";
-            res = _trie.GetWordsWithThisPrefix(query1);
-            return res.Select(f => f.sentence).ToList();
+            var sortedByCount = result.OrderByDescending(s => s.times).ToList();
+            if (sortedByCount == null)
+                return res;
+
+            foreach (var item in sortedByCount)
+            {
+                res.Add(item.sentence);
+                if (res.Count == 3)
+                    break;
+            }
+            return res;
         }
     }
 
@@ -56,7 +84,7 @@ namespace ScratchPad.Leetcode.Hard
             var runner = _root;
             foreach (var ch in input)
             {
-                if (runner.Children[ch] == null)
+                if (!runner.Children.ContainsKey(ch))
                     runner.Children[ch] = new TrieNode(ch);
 
                 runner = runner.Children[ch];
@@ -78,7 +106,7 @@ namespace ScratchPad.Leetcode.Hard
             var result = new List<TrieQueryNode>();
             foreach (var ch in prefix)
             {
-                if(runner.Children[ch] == null)
+                if (!runner.Children.ContainsKey(ch))
                     return null;
 
                 runner = runner.Children[ch];
@@ -98,19 +126,19 @@ namespace ScratchPad.Leetcode.Hard
                     times = runner.count
                 });
 
-                if (runner.Children.Any(q => q != null))
+                if (runner.Children.Count > 0)
                 {
-                    foreach (var child in runner.Children.Where(c => c != null))
+                    foreach (var child in runner.Children)
                     {
-                        FindPrefixSentences(child, result, prefix + child.key);
+                        FindPrefixSentences(child.Value, result, prefix + child.Key);
                     }
                 }
             }
             else
             {
-                foreach (var child in runner.Children.Where(c => c != null))
+                foreach (var child in runner.Children)
                 {
-                    FindPrefixSentences(child, result, prefix + child.key);
+                    FindPrefixSentences(child.Value, result, prefix + child.Key);
                 }
             }
         }
@@ -128,13 +156,13 @@ namespace ScratchPad.Leetcode.Hard
         public int count { get; set; }
         public bool IsEnd { get; set; }
 
-        public TrieNode[] Children { get; set; }
+        public IDictionary<char, TrieNode> Children{ get; set; }
 
         internal TrieNode(char ch, int times = 0)
         {
             key = ch;
             count = times;
-            Children = new TrieNode[150]; // a-z,A-Z,#,' '
+            Children = new Dictionary<char,TrieNode>(); // a-z,A-Z,#,' '
         }
     }
 }

@@ -209,6 +209,7 @@
     <Compile Include="Leetcode\Patterns\MinimumWindow\MinWindowSubstring.cs" />
     <Compile Include="Leetcode\Patterns\MinimumWindow\FindAnagramPositions.cs" />
     <Compile Include="Leetcode\Patterns\MinimumWindow\PermutationInAString567.cs" />
+    <Compile Include="DynamicProgramming\KnapSackProblem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

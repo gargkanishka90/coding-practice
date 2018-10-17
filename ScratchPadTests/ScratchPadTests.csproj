@@ -108,6 +108,7 @@
     <Compile Include="Tests\Leetcode\Hard\MinWindowSubstringTests.cs" />
     <Compile Include="Tests\Leetcode\FindAnagramPositionTests.cs" />
     <Compile Include="Tests\Leetcode\PermutationInAStringTests.cs" />
+    <Compile Include="Tests\DynamicProgramming\KnapSackProblemTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
