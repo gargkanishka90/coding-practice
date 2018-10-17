@@ -115,6 +115,7 @@
     <Compile Include="Graphs\Graph.cs" />
     <Compile Include="Graphs\Vertex.cs" />
     <Compile Include="Greedy\PartitionLabels.cs" />
+    <Compile Include="Greedy\TaskScheduler.cs" />
     <Compile Include="Hashing\ContainsDuplicate.cs" />
     <Compile Include="Hashing\CountDistinctElementsInWindow.cs" />
     <Compile Include="Hashing\FrequencySort.cs" />

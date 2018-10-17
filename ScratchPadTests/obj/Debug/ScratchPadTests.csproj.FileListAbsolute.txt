@@ -78,3 +78,4 @@ D:\Personal\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.csproj.Cor
 D:\Personal\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.csproj.CopyComplete
 D:\Personal\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.exe
 D:\Personal\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.pdb
+D:\Personal\coding-practice\ScratchPadTests\obj\Debug\ScratchPadTests.csprojResolveAssemblyReference.cache

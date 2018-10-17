@@ -51,6 +51,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Arrays\ArrayPairSumTests.cs" />
     <Compile Include="Tests\Arrays\DutchNationFlagTests.cs" />
+    <Compile Include="Tests\Arrays\GeneralArrayTests.cs" />
     <Compile Include="Tests\Arrays\MatrixZeroTests.cs" />
     <Compile Include="Tests\Arrays\MaxContiguousSubArrayTests.cs" />
     <Compile Include="Tests\Arrays\MissingElementTests.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
     <Compile Include="Tests\Graphs\GraphTests.cs" />
     <Compile Include="Tests\GreedyTests\PartitionLabelTests.cs" />
+    <Compile Include="Tests\GreedyTests\TaskSchedulerTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
     <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
     <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
