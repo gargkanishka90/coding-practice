@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 using ScratchPad.Arrays;
+using ScratchPad.Heap;
 
 namespace ScratchPadTests.Tests.Arrays
 {
@@ -36,6 +37,9 @@ namespace ScratchPadTests.Tests.Arrays
             Assert.AreEqual(1, instance.SearchInsert_BinarySearch_Method2(new[] { 1, 3, 5, 6 }, 2));
             Assert.AreEqual(4, instance.SearchInsert_BinarySearch_Method2(new[] { 1, 3, 5, 6 }, 7));
             Assert.AreEqual(0, instance.SearchInsert_BinarySearch_Method2(new[] { 1, 3, 5, 6 }, 0));
+
+            var instance1 = new SlidingWindowMaximum();
+            var a = instance1.MaxSlidingWindow(new[] { 1, 3, -1, -3, 5, 3, 6, 7 }, 3);
         }
     }
 }

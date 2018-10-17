@@ -28,21 +28,9 @@ namespace ScratchPad.Heap
             internal void RemoveKey(int key)
             {
                 var index = _data.FindIndex(x => x == key);
-                if (index == _data.Count - 1)
-                {
-                    _data.RemoveAt(_data.Count - 1);
-                    return;
-                }
-                _data[index] = _data[_data.Count - 1];
-                _data.RemoveAt(_data.Count-1);
-                if (index == 1 || _data[0] > _data[index])
-                {
-                    HeapifyUp(index);
-                }
-                else
-                {
-                    HeapifyDown(index);
-                }
+                Swap(index, _data.Count - 1);
+                _data.RemoveAt(_data.Count - 1);
+                HeapifyDown(index);
             }
 
             internal int PeekMax()
