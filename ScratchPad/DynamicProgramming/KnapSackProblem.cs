@@ -11,23 +11,23 @@ namespace ScratchPad.DynamicProgramming
                 for (var c = 0; c < V.GetLength(1); c++)
                     V[r, c] = -1;
 
-            return FindOptimalValue(values, weights, weights.Length - 1, capacity, V);
+            return FindOptimalValue(values, weights, values.Length - 1, capacity, V);
         }
 
-        public int FindOptimalValue(int[] values, int[] weights, int k, int remaining, int[,] memory){
-            if (k < 0)
+        public int FindOptimalValue(int[] values, int[] weights, int totalItems, int totalCapacity, int[,] memory){
+            if (totalItems < 0)
                 return 0;
 
-            if(memory[k, remaining] == -1){
-                var withoutIncluding = FindOptimalValue(values, weights, k - 1, remaining, memory);
+            if(memory[totalItems, totalCapacity] == -1){
+                var withoutIncluding = FindOptimalValue(values, weights, totalItems - 1, totalCapacity, memory);
 
-                var withIncluding = remaining < weights[k] ? 0
-                    : values[k] + FindOptimalValue(values, weights, k - 1, remaining - weights[k], memory);
+                var withIncluding = totalCapacity < weights[totalItems] ? 0
+                    : values[totalItems] + FindOptimalValue(values, weights, totalItems - 1, totalCapacity - weights[totalItems], memory);
 
-                memory[k, remaining] = Math.Max(withIncluding, withoutIncluding);
+                memory[totalItems, totalCapacity] = Math.Max(withIncluding, withoutIncluding);
             }
 
-            return memory[k, remaining];
+            return memory[totalItems, totalCapacity];
         }
     }
 }
