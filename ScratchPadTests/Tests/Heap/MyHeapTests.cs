@@ -40,10 +40,10 @@ namespace ScratchPadTests.Tests.Heap
             // [[0, 30],[5, 10],[15, 20]]
             var instance = new MeetingRoomsII();
             var data = new[] { new MeetingRoomsII.Interval(0,30), new MeetingRoomsII.Interval(5, 10) , new MeetingRoomsII.Interval(15, 20) };
-            Assert.AreEqual(2, instance.MinMeetingRooms(data));
+            Assert.AreEqual(3, instance.MinMeetingRooms(data));
 
             data = new[] { new MeetingRoomsII.Interval(7, 10), new MeetingRoomsII.Interval(2, 4) };
-            Assert.AreEqual(1, instance.MinMeetingRooms(data));
+            Assert.AreEqual(2, instance.MinMeetingRooms(data));
         }
     }
 }
