@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Arrays\RotateImage.cs" />
     <Compile Include="Backtracking\BinaryNumbers.cs" />
+    <Compile Include="Backtracking\GenerateParantheses.cs" />
     <Compile Include="BinaryTree\MergeTrees.cs" />
     <Compile Include="Companies\AmazonProblem.cs" />
     <Compile Include="Arrays\ArrayPairSum.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="BST\FloorAndCeilBST.cs" />
     <Compile Include="BST\LowestCommonAncestorBST.cs" />
     <Compile Include="BST\PreOrderToBST.cs" />
+    <Compile Include="Companies\Pagination.cs" />
     <Compile Include="CSharp6\GetterOnlyAutoProperties.cs" />
     <Compile Include="DesignPatterns\Builder\BuilderClient.cs" />
     <Compile Include="DesignPatterns\Builder\CarBuilder.cs" />
@@ -121,14 +123,17 @@
     <Compile Include="Hashing\FrequencySort.cs" />
     <Compile Include="Hashing\GroupAnagrams.cs" />
     <Compile Include="Hashing\KMostFrequently.cs" />
+    <Compile Include="Hashing\LFUCache.cs" />
     <Compile Include="Hashing\PalindromicString.cs" />
     <Compile Include="Hashing\SingleNumber.cs" />
     <Compile Include="Hashing\ValidAnagram.cs" />
     <Compile Include="Heap\IMyHeap.cs" />
     <Compile Include="Heap\MedianFinder.cs" />
+    <Compile Include="Heap\MeetingRoomsII.cs" />
     <Compile Include="Heap\MergeKSortedArrays.cs" />
     <Compile Include="Heap\MergeKSortedLists.cs" />
     <Compile Include="Heap\MyHeap.cs" />
+    <Compile Include="Heap\MyHeap2.cs" />
     <Compile Include="Heap\SlidingWindowMaximum.cs" />
     <Compile Include="JSON.NET\PracticeJSON.cs" />
     <Compile Include="Leetcode\FindAllDisappearedNumbers.cs" />
@@ -137,6 +142,7 @@
     <Compile Include="Leetcode\DecodeWays.cs" />
     <Compile Include="Leetcode\Hard\AutocompleteSystem.cs" />
     <Compile Include="Leetcode\IntersectClass.cs" />
+    <Compile Include="Leetcode\KillProcesses.cs" />
     <Compile Include="Leetcode\LIS.cs" />
     <Compile Include="Leetcode\Match.cs" />
     <Compile Include="Leetcode\MergeSortedLists.cs" />
@@ -158,6 +164,7 @@
     <Compile Include="Leetcode\WordBreakProblem.cs" />
     <Compile Include="Leetcode\WordSearch2.cs" />
     <Compile Include="LinkedList\AddTwoNumbers.cs" />
+    <Compile Include="LinkedList\CopyListRandomNode.cs" />
     <Compile Include="LinkedList\DeleteMnodesAfterEveryNnodes.cs" />
     <Compile Include="LinkedList\LinkedListCycle.cs" />
     <Compile Include="LinkedList\LinkedListUtillities.cs" />

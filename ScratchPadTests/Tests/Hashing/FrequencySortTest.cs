@@ -8,7 +8,8 @@ namespace ScratchPad.Tests.Hashing
         [Test]
         public void DofrequencySort()
         {
-            var res = FrequencySort.Sort("tree");
+            var res = FrequencySort.SortUsingHeap("raaeaedere");
+            Assert.AreEqual("eeeeaaarrd", res);
         } 
     }
 }

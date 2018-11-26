@@ -7,6 +7,12 @@ namespace ScratchPad.String
     {
         public int StringToInteger(string input)
         {
+            if (string.IsNullOrWhiteSpace(input))
+                return 0;
+
+            input = input.Trim();
+
+            input = GetParseSegment(input.ToCharArray());
             // This method is also known as "Horner's Method".
             var result = 0;
             var flag = false;
@@ -24,6 +30,17 @@ namespace ScratchPad.String
             }
 
             return flag ? -1 * result : result;
+        }
+
+        private string GetParseSegment(char[] input)
+        {
+            var i = 0;
+            while (char.IsDigit(input[i]))
+            {
+                i++;
+            }
+
+            return input.ToString().Substring(0, i);
         }
 
         public string IntegerToString(int input)

@@ -14,13 +14,14 @@ namespace ScratchPad.Tests.BacktrackingTests
         [Test]
         public void Test01()
         {
-            var instance = new Permutations();
+            var instance = new GenerateParantheses();
+            var res = instance.Generate(3);
             //var res = instance.FindAllPermutations("abc");
             //var res1 = instance.Permute(new[] {1, 2, 3});
 
-           // var ss = instance.GetPermutation(3, 5);
+            // var ss = instance.GetPermutation(3, 5);
 
-            
+
         }
 
         [Test]

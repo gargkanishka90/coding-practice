@@ -64,6 +64,7 @@
     <Compile Include="Tests\Graphs\GraphTests.cs" />
     <Compile Include="Tests\GreedyTests\PartitionLabelTests.cs" />
     <Compile Include="Tests\GreedyTests\TaskSchedulerTests.cs" />
+    <Compile Include="Tests\Hashing\CommonHashingTests.cs" />
     <Compile Include="Tests\Hashing\CountDistinctElementsInWindowTest.cs" />
     <Compile Include="Tests\Hashing\FrequencySortTest.cs" />
     <Compile Include="Tests\Hashing\GroupAnagramsTest.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Tests\Hashing\ValidAnagramTest.cs" />
     <Compile Include="Tests\Heap\MedianFinderTest.cs" />
     <Compile Include="Tests\Heap\MergeKSortedArraysTest.cs" />
+    <Compile Include="Tests\Heap\MyHeapTests.cs" />
     <Compile Include="Tests\Heap\SlidingWindowMaximumTest.cs" />
     <Compile Include="Tests\Leetcode\CountAndSayTest.cs" />
     <Compile Include="Tests\Leetcode\FindAllDisappearedNumbersTest.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Tests\Leetcode\Matrix\SpiralMatrixTests.cs" />
     <Compile Include="Tests\Leetcode\TwoSumTest.cs" />
     <Compile Include="Tests\LinkedListTests\AddTwoNumbersTest.cs" />
+    <Compile Include="Tests\LinkedListTests\CopyListRandomNodeTests.cs" />
     <Compile Include="Tests\LinkedListTests\DeleteMafterEveryNTest.cs" />
     <Compile Include="Tests\LinkedListTests\LinkedListCycleTests.cs" />
     <Compile Include="Tests\LinkedListTests\RemoveDupsTest.cs" />
@@ -88,6 +91,7 @@
     <Compile Include="Tests\LinkedListTests\SplitLinkedListTests.cs" />
     <Compile Include="Tests\LongestIncreasingSubsequenceTests.cs" />
     <Compile Include="Tests\LRUCache\LRUCacheTests.cs" />
+    <Compile Include="Tests\PaginationTest.cs" />
     <Compile Include="Tests\Searching\InvertedIndexTests.cs" />
     <Compile Include="Tests\SegmentTreeTests\SegmentTreeTests.cs" />
     <Compile Include="Tests\Sorting\BubbleSortTest.cs" />
