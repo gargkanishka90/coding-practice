@@ -77,18 +77,71 @@ namespace ScratchPad.Leetcode
         // The idea here is to 
         public static bool WordBreakDP(string s, IList<string> wordDict){
             var set = new HashSet<string>(wordDict);
-            if (s == "") return true;
+            if (string.IsNullOrWhiteSpace(s))
+                return true;
 
             var dp = new bool[s.Length + 1];
             dp[0] = true;
 
-            for (var len = 1; len <= s.Length; len++){
-                for (var i = 0; i < len; i++){
-                    if(dp[i] && set.Contains(s.Substring(i, len))){
-                        dp[len] = true;
+            for (var i = 1; i <= s.Length; i++)
+            {
+                for (var j = 0; j < i; j++)
+                {
+                    if (dp[j] && set.Contains(s.Substring(j, i - j)))
+                    {
+                        dp[i] = true;
                         break;
                     }
                 }
+            }
+
+            return dp[s.Length];
+        }
+
+        public List<string> wordBreak(string s, ISet<string> wordDict)
+        {
+            // Check if there is at least one possible sentence
+            var dp1 = new bool[s.Length + 1];
+            dp1[0] = true;
+            for (int i = 1; i <= s.Length; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (dp1[j] && wordDict.Contains(s.Substring(j, i-j)))
+                    {
+                        dp1[i] = true;
+                        break;
+                    }
+                }
+            }
+
+            // We are done if there isn't a valid sentence at all
+            if (!dp1[s.Length])
+            {
+                return new List<string>();
+            }
+
+            var dp = new List<string>[s.Length + 1];
+            var initial = new List<string>();
+            initial.Add("");
+            dp[0] = initial;
+
+            for (int i = 1; i <= s.Length; i++)
+            {
+                var list = new List<string>();
+
+                for (int j = 0; j < i; j++)
+                {
+                    if (dp[j].Count > 0 && wordDict.Contains(s.Substring(j, i - j)))
+                    {
+                        foreach (var l in dp[j])
+                        {
+                            list.Add(l + (l.Equals("") ? "" : " ") + s.Substring(j, i));
+                        }
+                    }
+                }
+
+                dp[i] = list;
             }
             return dp[s.Length];
         }

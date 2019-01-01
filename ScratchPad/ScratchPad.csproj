@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\RotateImage.cs" />
+    <Compile Include="Arrays\SquareSum.cs" />
     <Compile Include="Backtracking\BinaryNumbers.cs" />
     <Compile Include="Backtracking\GenerateParantheses.cs" />
     <Compile Include="BinaryTree\MergeTrees.cs" />
@@ -113,8 +114,11 @@
     <Compile Include="DynamicProgramming\LongestRepeatedSubsequence.cs" />
     <Compile Include="DynamicProgramming\RobotGrid.cs" />
     <Compile Include="DynamicProgramming\StringHelpers.cs" />
+    <Compile Include="Graphs\DirectedGraphCycle.cs" />
     <Compile Include="Graphs\Edge.cs" />
     <Compile Include="Graphs\Graph.cs" />
+    <Compile Include="Graphs\Maze.cs" />
+    <Compile Include="Graphs\UndirectedGraphCycle.cs" />
     <Compile Include="Graphs\Vertex.cs" />
     <Compile Include="Greedy\PartitionLabels.cs" />
     <Compile Include="Greedy\TaskScheduler.cs" />
@@ -141,6 +145,7 @@
     <Compile Include="Leetcode\CountAndSayClass.cs" />
     <Compile Include="Leetcode\DecodeWays.cs" />
     <Compile Include="Leetcode\Hard\AutocompleteSystem.cs" />
+    <Compile Include="Leetcode\Hard\RobotRoomCleaner.cs" />
     <Compile Include="Leetcode\IntersectClass.cs" />
     <Compile Include="Leetcode\KillProcesses.cs" />
     <Compile Include="Leetcode\LIS.cs" />
@@ -192,6 +197,7 @@
     <Compile Include="String\LongestPalindromicSubstring.cs" />
     <Compile Include="String\LookAndSay.cs" />
     <Compile Include="String\ReplaceChars.cs" />
+    <Compile Include="String\RobinKarp.cs" />
     <Compile Include="String\StringEdit.cs" />
     <Compile Include="String\StringIntegerConvert.cs" />
     <Compile Include="String\UniqueCharacters.cs" />
