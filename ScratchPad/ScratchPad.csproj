@@ -113,7 +113,9 @@
     <Compile Include="DynamicProgramming\LongestIncreasingSubsequence.cs" />
     <Compile Include="DynamicProgramming\LongestRepeatedSubsequence.cs" />
     <Compile Include="DynamicProgramming\RobotGrid.cs" />
+    <Compile Include="DynamicProgramming\ScoreCombinations.cs" />
     <Compile Include="DynamicProgramming\StringHelpers.cs" />
+    <Compile Include="Graphs\Components.cs" />
     <Compile Include="Graphs\DirectedGraphCycle.cs" />
     <Compile Include="Graphs\Edge.cs" />
     <Compile Include="Graphs\Graph.cs" />
@@ -150,6 +152,7 @@
     <Compile Include="Leetcode\KillProcesses.cs" />
     <Compile Include="Leetcode\LIS.cs" />
     <Compile Include="Leetcode\Match.cs" />
+    <Compile Include="Leetcode\Matrix\NumIslandsII.cs" />
     <Compile Include="Leetcode\MergeSortedLists.cs" />
     <Compile Include="Leetcode\MinStack.cs" />
     <Compile Include="Leetcode\MissingClass.cs" />
@@ -205,6 +208,8 @@
     <Compile Include="Trie\Trie.cs" />
     <Compile Include="Trie\TrieNode.cs" />
     <Compile Include="BinaryTree\InOrderTraversal.cs" />
+    <Compile Include="UnionFind\RedundantConnections.cs" />
+    <Compile Include="UnionFind\UnionFind.cs" />
     <Compile Include="Utils\PrintUtils.cs" />
     <Compile Include="BinaryTree\BinaryTreeConstruction.cs" />
     <Compile Include="BinaryTree\FlattenTree.cs" />

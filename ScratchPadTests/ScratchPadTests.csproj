@@ -61,6 +61,7 @@
     <Compile Include="Tests\BST\BinarySearchTreeTests.cs" />
     <Compile Include="Tests\BST\BSTSuccessorTests.cs" />
     <Compile Include="Tests\DynamicProgramming\RobotGridTests.cs" />
+    <Compile Include="Tests\DynamicProgramming\ScoreCombinationTests.cs" />
     <Compile Include="Tests\Graphs\GraphTests.cs" />
     <Compile Include="Tests\GreedyTests\PartitionLabelTests.cs" />
     <Compile Include="Tests\GreedyTests\TaskSchedulerTests.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Tests\Leetcode\FindAnagramPositionTests.cs" />
     <Compile Include="Tests\Leetcode\PermutationInAStringTests.cs" />
     <Compile Include="Tests\DynamicProgramming\KnapSackProblemTests.cs" />
+    <Compile Include="Tests\UnionFindTests\UnionFindTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
